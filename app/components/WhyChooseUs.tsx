@@ -36,9 +36,9 @@ export default function WhyChooseUs() {
           <span className="text-[10px] font-mono font-black tracking-widest text-[#C5A059] uppercase block">
             THE BLIND METHOD VS. SECURED PURCHASING
           </span>
-          <h2 className="font-sans text-3xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-tight">
+          <h2 className="font-sans text-2xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-tight">
             Assumptions Cost Millions. <br />
-            <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-2xl sm:text-4xl block mt-1">
+            <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-xl sm:text-4xl block mt-1">
               We Deliver Absolute Objectivity.
             </span>
           </h2>

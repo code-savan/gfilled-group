@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
-import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
 
 export default function TestimonialsSection() {
@@ -10,19 +9,16 @@ export default function TestimonialsSection() {
     {
       name: "Dr. Jude Okonjo",
       role: "Houston, TX (US Diaspora Client)",
-      image: "https://picsum.photos/seed/jude/150/150",
       quote: "Buying property in Lagos from abroad used to feel like playing roulette. I lost ₦18 Million in 2021 relying on family. With Gfilled, I acquired two plots in Lekki Phase 1 completely remote. Their licensed surveyor found a 15-meter overlap on one plot, saving me from a lifelong boundary litigation. Gfilled represents buyer sanity.",
     },
     {
       name: "Mrs. Adebisi Alao",
       role: "Senior Director, Financial Services (Lagos)",
-      image: "https://picsum.photos/seed/adebisi/150/150",
-      quote: "Sellers always pressure you saying 'The C of O is in-process, pay now.' Gfilled’s Due Diligence report proved the master planning files were entirely under caution by the FCDA in Abuja. Paying their flat fee of ₦270,000 stopped us from throwing ₦85 Million into a developmental sinkhole. Unbelievable eye for detail.",
+      quote: "Sellers always pressure you saying 'The C of O is in-process, pay now.' Gfilled's Due Diligence report proved the master planning files were entirely under caution by the FCDA in Abuja. Paying their flat fee of ₦270,000 stopped us from throwing ₦85 Million into a developmental sinkhole. Unbelievable eye for detail.",
     },
     {
       name: "Alhaji Bello Mohammed",
       role: "CEO, Prestige Homes (Abuja Real Estate Developer)",
-      image: "https://picsum.photos/seed/bello_dev/150/150",
       quote: "We don't negotiate with buyer agents who demand fat kickbacks. We register our layouts with Gfilled Group. Their legal division audits our ownership indexes, so our clients acquire titles with 100% certainty. It makes Gfilled listings the safest real estate in the country.",
     },
   ];
@@ -46,9 +42,9 @@ export default function TestimonialsSection() {
           <span className="text-[10px] font-mono font-black tracking-widest text-zinc-400 uppercase block">
             CLIENT AUDIT REVIEWS
           </span>
-          <h2 className="font-sans text-3xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-tight">
+          <h2 className="font-sans text-2xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-tight">
             Security Stories. <br />
-            <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-2xl sm:text-4xl block mt-1">
+            <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-xl sm:text-4xl block mt-1">
               Tested in Registries, Trusted by Buyers.
             </span>
           </h2>
@@ -59,7 +55,7 @@ export default function TestimonialsSection() {
 
         {/* Carousel Framer Container */}
         <div className="relative bg-zinc-55 border border-zinc-200 rounded-sm p-5 sm:p-8 md:p-12 shadow-sm min-h-[350px] sm:min-h-[400px] flex flex-col justify-between">
-          <Quote className="absolute top-4 left-4 sm:top-8 sm:left-8 w-8 h-8 sm:w-12 sm:h-12 text-zinc-150 pointer-events-none opacity-50 sm:opacity-100" />
+          <Quote className="absolute bottom-4 right-4 sm:bottom-8 sm:right-8 w-8 h-8 sm:w-12 sm:h-12 text-zinc-150 pointer-events-none opacity-30 sm:opacity-50" />
 
           {/* Active Testimonial Projection with AnimatePresence */}
           <div className="relative overflow-hidden flex-1 flex flex-col justify-center">
@@ -86,15 +82,17 @@ export default function TestimonialsSection() {
 
                 {/* Client Meta block */}
                 <div className="flex items-center gap-4 pt-4 border-t border-zinc-150">
-                  <div className="relative w-12 h-12 rounded-sm overflow-hidden border border-zinc-200 bg-zinc-100 flex-shrink-0">
-                    <Image
-                      src={current.image}
-                      alt={current.name}
-                      fill
-                      className="object-cover"
-                      sizes="48px"
-                      referrerPolicy="no-referrer"
-                    />
+                  <div className="w-12 h-12 rounded-sm bg-zinc-950 flex items-center justify-center flex-shrink-0 border border-zinc-800">
+                    <span className="text-white text-xs font-bold font-mono">
+                      {current.name
+                        .replace(/^(Dr\.|Mrs\.|Alhaji|Mr\.|Ms\.|Barr\.)\s+/i, '')
+                        .split(' ')
+                        .filter(Boolean)
+                        .map(w => w[0])
+                        .join('')
+                        .slice(0, 2)
+                        .toUpperCase()}
+                    </span>
                   </div>
                   <div>
                     <h4 className="font-sans font-extrabold text-sm text-zinc-950 uppercase tracking-wide">

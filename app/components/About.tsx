@@ -32,9 +32,9 @@ export default function About() {
               <span className="text-[10px] font-mono font-black tracking-widest text-[#C5A059] uppercase block">
                 ABOUT GFILLED GROUP
               </span>
-              <h2 className="font-display text-3xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-tight">
+              <h2 className="font-display text-2xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-tight">
                 Securing Your Wealth. <br />
-                <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-2xl sm:text-4xl block mt-1">
+                <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-xl sm:text-4xl block mt-1">
                   Preventing Financial Ambush.
                 </span>
               </h2>
@@ -105,18 +105,18 @@ export default function About() {
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-black/30 z-10"></div>
-              
-              <div className="absolute bottom-8 left-8 right-8 text-white space-y-2.5 z-20">
-                <span className="text-[9px] uppercase tracking-widest bg-zinc-900 text-white font-mono font-bold px-2.5 py-1 rounded-sm">
-                  GFilled Group Legal Support
-                </span>
-                <h3 className="font-sans font-bold text-xl text-white uppercase tracking-tight">
-                  Legal Counselors Dedicated to Buyer Protection
-                </h3>
-                <p className="text-[11px] text-zinc-200 leading-relaxed font-sans">
-                  Headed by legal specialists in Abuja and Lagos Land Registry audits. We supervise physical site border validation protocols and secure the true value of your estates.
-                </p>
-              </div>
+            </div>
+            
+            <div className="p-5 rounded-sm border border-zinc-200 bg-white shadow-sm -mt-4 relative z-20 mx-3 space-y-2.5">
+              <span className="text-[9px] uppercase tracking-widest bg-zinc-900 text-white font-mono font-bold px-2.5 py-1 rounded-sm inline-block">
+                GFilled Group Legal Support
+              </span>
+              <h3 className="font-sans font-bold text-base sm:text-xl text-zinc-950 uppercase tracking-tight">
+                Legal Counselors Dedicated to Buyer Protection
+              </h3>
+              <p className="text-[10px] sm:text-[11px] text-zinc-600 leading-relaxed font-sans">
+                Headed by legal specialists in Abuja and Lagos Land Registry audits. We supervise physical site border validation protocols and secure the true value of your estates.
+              </p>
             </div>
 
             {/* Inset quote */}
@@ -137,7 +137,7 @@ export default function About() {
             <span className="text-[10px] font-mono font-black tracking-widest text-[#C5A059] uppercase block">
               OUR INVESTIGATIVE DIRECTORS
             </span>
-            <h3 className="font-sans text-2xl sm:text-4xl font-extrabold text-zinc-950 uppercase tracking-tight">
+            <h3 className="font-sans text-xl sm:text-4xl font-extrabold text-zinc-950 uppercase tracking-tight">
               MEET THE GFILLED SECURITY BOARD
             </h3>
             <p className="text-zinc-600 text-sm leading-relaxed font-sans">

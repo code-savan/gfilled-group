@@ -49,9 +49,9 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
               <span className="text-[10px] font-mono tracking-widest font-black uppercase text-zinc-400 block">
                 CONTACT THE REGISTRY OFFICE
               </span>
-              <h2 className="font-sans text-3xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-tight">
+              <h2 className="font-sans text-2xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-tight">
                 Secure Your Assets. <br />
-                <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-2xl sm:text-4xl block mt-1">
+                <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-xl sm:text-4xl block mt-1">
                   Absolute Legal Certainty.
                 </span>
               </h2>
@@ -67,7 +67,7 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-sans font-bold text-sm text-zinc-950 uppercase tracking-wide">Direct Hotline Calls (Abuja/Lagos)</h4>
+                  <h4 className="font-sans font-bold text-xs sm:text-sm text-zinc-950 uppercase tracking-wide">Direct Hotline Calls (Abuja/Lagos)</h4>
                   <p className="text-sm text-zinc-700 font-mono font-bold mt-1">+234 (0) 906 888 8848</p>
                   <p className="text-[10px] text-zinc-400 font-mono">Available Mon–Sat: 8am – 6pm (GMT +1)</p>
                 </div>
@@ -78,7 +78,7 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-sans font-bold text-sm text-zinc-950 uppercase tracking-wide">Secured Document Portal</h4>
+                  <h4 className="font-sans font-bold text-xs sm:text-sm text-zinc-950 uppercase tracking-wide">Secured Document Portal</h4>
                   <p className="text-sm text-zinc-700 font-mono font-bold mt-1">legal@gfilled.com</p>
                   <p className="text-[10px] text-zinc-400 font-sans">Send titles, surveys, or deed files directly for encrypted legal review.</p>
                 </div>
@@ -89,7 +89,7 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-sans font-bold text-sm text-zinc-950 uppercase tracking-wide">Specialist Headquarters</h4>
+                  <h4 className="font-sans font-bold text-xs sm:text-sm text-zinc-950 uppercase tracking-wide">Specialist Headquarters</h4>
                   <p className="text-xs text-zinc-700 mt-1 font-semibold leading-relaxed font-sans">
                     GFilled Group, Plot 522, Gimbia Street, Area 11, Garki, Abuja, Nigeria.
                   </p>
@@ -255,9 +255,9 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
 
                   <button
                     type="submit"
-                    className="w-full py-4 px-6 bg-zinc-950 hover:bg-zinc-805 text-white font-black tracking-widest text-xs uppercase rounded-sm transition-all cursor-pointer flex items-center justify-center gap-2 border border-zinc-900"
+                    className="w-full py-4 px-4 sm:px-6 bg-zinc-950 hover:bg-zinc-800 text-white font-black tracking-widest text-[10px] sm:text-xs uppercase rounded-sm transition-all cursor-pointer flex items-center justify-center gap-2 border border-zinc-900 leading-tight"
                   >
-                    <Send className="w-4 h-4 text-white" />
+                    <Send className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white shrink-0" />
                     Book & Secure Representation
                   </button>
                 </form>

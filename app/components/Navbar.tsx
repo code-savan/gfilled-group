@@ -76,7 +76,7 @@ export default function Navbar({ onNavigate, activeSection }: NavbarProps) {
               className="flex items-center gap-3 cursor-pointer group"
               onClick={() => onNavigate("home")}
             >
-              <div className="relative flex items-center justify-center w-10 h-10 overflow-hidden transition-transform group-hover:scale-[1.02]">
+              <div className="relative flex items-center justify-center w-8 h-8 overflow-hidden transition-transform group-hover:scale-[1.02]">
                 <Image src="https://pub-c0e4eba1bc8e4753be4abcf9f2033e98.r2.dev/logo.png" fill className="object-contain" alt="GFilled Logo" referrerPolicy="no-referrer" />
               </div>
               <div>

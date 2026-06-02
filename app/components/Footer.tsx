@@ -113,18 +113,19 @@ export default function Footer({ onNavigate }: FooterProps) {
             <b>LEGAL NOTE AND ADVISORY DISCLAIMER:</b> GFilled Group operates strictly as an independent buyer inspection representative and transactional legal advisory. Property selections shown on this portal highlight physical land-registry auditable clearings and surveyor validations; Gfilled does not guarantee general speculative financial return rates. Verification indexes represent accurate local registry searches matching original deeds at the time of checkups.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-between sm:gap-6 border-t border-zinc-900/50 pt-6 text-[11px] text-zinc-650 font-mono uppercase font-semibold">
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-              <span>
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+              <span className="text-center sm:text-left w-full sm:w-auto">
                 &copy; {currentYear} Gfilled Group Realty & Legal Ltd. All Rights Reserved.
               </span>
-              <span className="text-zinc-800">|</span>
-              <Link href="/privacy" className="hover:text-[#C5A059] transition-colors lowercase font-sans">
-                Privacy Policy
-              </Link>
-              <span className="text-zinc-800">|</span>
-              <Link href="/terms" className="hover:text-[#C5A059] transition-colors lowercase font-sans">
-                Terms of Use
-              </Link>
+              <span className="flex items-center gap-x-4">
+                <Link href="/privacy" className="hover:text-[#C5A059] transition-colors font-sans">
+                  Privacy Policy
+                </Link>
+                <span className="text-zinc-800">|</span>
+                <Link href="/terms" className="hover:text-[#C5A059] transition-colors font-sans">
+                  Terms of Use
+                </Link>
+              </span>
             </div>
             <span className="flex items-center gap-1.5 mt-2 sm:mt-0">
               <div className="w-4 h-4 overflow-hidden flex items-center justify-center relative">

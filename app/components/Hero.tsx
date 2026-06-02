@@ -188,7 +188,7 @@ export default function Hero({ onVerifyClick, onConsultClick }: HeroProps) {
               initial={{ opacity: 0, x: 30, rotate: 1 }}
               animate={{ opacity: 1, x: 0, rotate: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="w-full max-w-[340px] bg-zinc-950 rounded-sm p-4 shadow-2xl relative overflow-hidden text-zinc-950 border border-zinc-800"
+              className="w-full lg:max-w-[340px] bg-zinc-950 rounded-sm p-4 shadow-2xl relative overflow-hidden text-zinc-950 border border-zinc-800"
             >
               {/* Header inside validation mockup */}
               <div className="flex justify-between items-center mb-3 text-left">
@@ -202,7 +202,7 @@ export default function Hero({ onVerifyClick, onConsultClick }: HeroProps) {
 
               {/* Portrait Video Thumbnail / Custom Player Frame */}
               <div 
-                className="relative h-[280px] sm:h-[400px] w-full rounded-sm overflow-hidden shadow-sm bg-zinc-950 group cursor-pointer border border-zinc-850"
+                className="relative h-[400px] sm:h-[480px] w-full rounded-sm overflow-hidden shadow-sm bg-zinc-950 group cursor-pointer border border-zinc-850"
               >
                 {isPlayingVideo ? (
                   <div 

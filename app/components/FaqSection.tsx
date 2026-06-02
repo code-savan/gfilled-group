@@ -49,10 +49,10 @@ export default function FaqSection() {
             <span className="text-[10px] font-mono font-black tracking-widest text-zinc-405 uppercase block">
               TRANSACTIONAL TRANSPARENCY
             </span>
-            <h2 className="font-sans text-3xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-none">
+            <h2 className="font-sans text-2xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-none">
               FREQUENTLY <br />
               ASKED <br />
-              <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-2xl sm:text-4xl block mt-1">
+              <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-xl sm:text-4xl block mt-1">
                 Inquiries.
               </span>
             </h2>

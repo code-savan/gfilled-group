@@ -58,9 +58,9 @@ export default function HowItWorks() {
           <span className="text-[10px] font-mono font-black tracking-widest text-zinc-400 uppercase block">
             OUR DETAILED CHECKING PROCESS
           </span>
-          <h2 className="font-sans text-3xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-tight">
+          <h2 className="font-sans text-2xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-tight">
             Our Security Blueprint <br />
-            <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-2xl sm:text-4xl block mt-1">
+            <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-xl sm:text-4xl block mt-1">
               Preventing Scams Before You Pay.
             </span>
           </h2>

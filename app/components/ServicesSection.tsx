@@ -103,9 +103,9 @@ export default function ServicesSection({ onBookConsultation }: ServicesSectionP
           <span className="text-[10px] font-mono tracking-widest font-black uppercase text-zinc-400 block">
             OUR PROTECTION PACKAGES
           </span>
-          <h2 className="font-sans text-3xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-tight">
+          <h2 className="font-sans text-2xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-tight">
             Our Standardized Pricing.<br />
-            <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-2xl sm:text-4xl block mt-1">
+            <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-xl sm:text-4xl block mt-1">
               Flat Rates, Direct Representation.
             </span>
           </h2>
@@ -142,7 +142,7 @@ export default function ServicesSection({ onBookConsultation }: ServicesSectionP
                 </div>
 
                 <div className="flex items-baseline mb-6 gap-1.5 border-b border-zinc-100 pb-5">
-                  <span className="text-4xl font-sans font-black text-zinc-950">{pkg.price}</span>
+                  <span className="text-2xl sm:text-4xl font-sans font-black text-zinc-950">{pkg.price}</span>
                   <span className="text-xs text-zinc-500 font-mono tracking-wide">/ flat fee</span>
                 </div>
 
@@ -166,7 +166,7 @@ export default function ServicesSection({ onBookConsultation }: ServicesSectionP
               <button
                 type="button"
                 onClick={() => onBookConsultation(pkg.name)}
-                className={`w-full py-3.5 px-4 rounded-sm text-xs font-black uppercase tracking-widest transition-all duration-200 cursor-pointer ${
+                className={`w-full py-3.5 px-3 rounded-sm text-[10px] sm:text-xs font-black uppercase tracking-widest transition-all duration-200 cursor-pointer leading-tight ${
                   pkg.popular
                     ? "bg-zinc-950 text-white hover:bg-zinc-800"
                     : "border border-zinc-300 text-zinc-800 hover:border-zinc-950 hover:text-zinc-950"
@@ -373,10 +373,10 @@ export default function ServicesSection({ onBookConsultation }: ServicesSectionP
                 <button
                   type="button"
                   onClick={() => onBookConsultation(`Custom Builder Package: ₦${customTotal.toLocaleString()}`)}
-                  className="w-full inline-flex items-center justify-center gap-2 py-4 bg-zinc-950 hover:bg-zinc-800 text-white rounded-sm text-xs font-black tracking-widest uppercase transition-colors cursor-pointer"
+                  className="w-full inline-flex items-center justify-center gap-2 py-4 px-3 bg-zinc-950 hover:bg-zinc-800 text-white rounded-sm text-[10px] sm:text-xs font-black tracking-widest uppercase transition-colors cursor-pointer leading-tight"
                 >
-                  <Wallet className="w-4 h-4" />
-                  Order Customized Verification Plan
+                  <Wallet className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+                  Order Verification Plan
                 </button>
               </div>
             </div>
