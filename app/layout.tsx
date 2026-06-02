@@ -18,6 +18,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: 'Gfilled Group | Premium Real Estate Acquisition & Legal Advisory',
   description: 'Secure property purchases in Nigeria with absolute legal certainty. Specialized escrow, due-diligence, and title verification for Nigerians at home and abroad.',
+  icons: {
+    icon: 'https://pub-c0e4eba1bc8e4753be4abcf9f2033e98.r2.dev/logo.png',
+  },
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
