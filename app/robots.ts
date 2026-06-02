@@ -1,6 +1,7 @@
 import type {MetadataRoute} from 'next';
 
-const siteUrl = process.env.APP_URL || 'https://GfilledGroup.com';
+const rawUrl = process.env.APP_URL;
+const siteUrl = rawUrl && rawUrl !== 'https://Gfilled.com' ? rawUrl : 'https://Gfilled.com';
 
 export default function robots(): MetadataRoute.Robots {
   return {

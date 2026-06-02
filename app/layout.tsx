@@ -1,6 +1,7 @@
 import type {Metadata} from 'next';
 import { Inter, Poppins } from 'next/font/google';
 import './globals.css';
+import ScrollManager from './components/ScrollManager';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -15,7 +16,8 @@ const poppins = Poppins({
   display: 'swap',
 });
 
-const siteUrl = process.env.APP_URL || 'https://GfilledGroup.com';
+const rawUrl = process.env.APP_URL;
+const siteUrl = rawUrl && rawUrl !== 'MY_APP_URL' ? rawUrl : 'https://GfilledGroup.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -61,12 +63,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html lang="en" className={`${inter.variable} ${poppins.variable} scroll-smooth`}>
+    <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
       <head>
         <link rel="canonical" href={siteUrl} />
       </head>
       <body suppressHydrationWarning className="bg-white font-sans antialiased text-zinc-900 selection:bg-amber-100 selection:text-amber-950">
-        {children}
+        <ScrollManager>
+          {children}
+        </ScrollManager>
       </body>
     </html>
   );

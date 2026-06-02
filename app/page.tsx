@@ -12,18 +12,17 @@ import FaqSection from "./components/FaqSection";
 import ContactSection from "./components/ContactSection";
 import ChatWidget from "./components/ChatWidget";
 import Footer from "./components/Footer";
+import { useLenisScroll } from "./components/ScrollManager";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home");
   const [prefilledPackage, setPrefilledPackage] = useState("free-call");
+  const { scrollTo } = useLenisScroll();
 
   // Handle smooth scroll to specific section
   const handleNavigate = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "start" });
-      setActiveSection(sectionId);
-    }
+    scrollTo(sectionId);
+    setActiveSection(sectionId);
   };
 
   // Safe callback when selecting direct pricing cards or checklist reviews
