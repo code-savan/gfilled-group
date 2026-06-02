@@ -104,7 +104,7 @@ export default function Hero({ onVerifyClick, onConsultClick }: HeroProps) {
       {/* Premium Framer Image Background */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://framerusercontent.com/images/sTFbj7NSmZN3dt0Z5GhI6tjPuU.jpeg?width=4800&height=2700"
+          src="https://pub-c0e4eba1bc8e4753be4abcf9f2033e98.r2.dev/herobg.avif"
           alt="Premium Luxury Real Estate Background"
           fill
           priority
@@ -183,7 +183,7 @@ export default function Hero({ onVerifyClick, onConsultClick }: HeroProps) {
           </div>
 
           {/* Right Area: Large Sharp Floating Portrait Video Debrief Card */}
-          <div className="lg:col-span-5 relative mt-6 lg:mt-0 flex justify-center">
+          <div className="lg:col-span-5 relative mt-6 lg:mt-0 flex justify-center lg:justify-end">
             <motion.div
               initial={{ opacity: 0, x: 30, rotate: 1 }}
               animate={{ opacity: 1, x: 0, rotate: 0 }}
