@@ -10,7 +10,7 @@ export default function About() {
       name: "Barr. Metu C. Fortune",
       role: "Founder & Managing Partner",
       dept: "Founder & Managing Partner, Gfilled Group",
-      desc: "Real Estate Lawyer and Property Acquisition Advisor with over 8 years of hands on experience in real estate transactions, property due diligence, and legal advisory within Nigeria’s property market.\n\nSpecializes in title verification, transaction structuring, and legal risk assessment for property acquisitions across Abuja and other key real estate hubs in Nigeria.\n\nHe leads Gfilled Group with a focus on helping Nigerians at home and in the diaspora secure property safely, avoid fraudulent transactions, and complete real estate deals with legal clarity and confidence.",
+      desc: "Fortune is a Real Estate Lawyer and Property Advisor with over 8 years of experience helping people buy property safely in Nigeria. He specializes in checking land titles, verifying ownership, and making sure every legal detail is correct before you pay.\n\nHe leads Gfilled Group with one mission: to help Nigerians at home and abroad buy property without fear of scams or legal problems.",
       image: "https://pub-c0e4eba1bc8e4753be4abcf9f2033e98.r2.dev/fortune.jpeg",
     },
     {
@@ -30,18 +30,18 @@ export default function About() {
           <div className="lg:col-span-7 space-y-10">
             <div className="space-y-4">
               <span className="text-[10px] font-mono font-black tracking-widest text-[#C5A059] uppercase block">
-                ABOUT GFILLED GROUP
+                ABOUT US
               </span>
               <h2 className="font-display text-2xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-tight">
-                Securing Your Wealth. <br />
+                Your Safety Is Our <br />
                 <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-xl sm:text-4xl block mt-1">
-                  Preventing Financial Ambush.
+                  Number One Priority.
                 </span>
               </h2>
             </div>
 
             <p className="text-zinc-800 text-base leading-relaxed font-sans">
-              GFilled Group is not a property agent trying to make a quick sale. We are licensed property lawyers and inspectors who work ONLY for you—the buyer. We check government land registries, physically visit properties to measure boundaries, and review contracts to guard your savings so you never purchase a scam or get sued.
+              Gfilled Group helps you buy property safely in Nigeria. Yes, we have vetted properties we list for sale. And we also help you check any property you find on your own. We are licensed property lawyers and inspectors who check government land records, visit properties to measure boundaries, and review contracts so you never get scammed.
             </p>
 
             {/* Pain Point Diagnostic Bento Row - Generous spacing */}
@@ -50,9 +50,9 @@ export default function About() {
                 <div className="inline-flex p-3 bg-red-100 rounded-sm text-red-700 font-bold">
                   <AlertCircle className="w-5.5 h-5.5" />
                 </div>
-                <h4 className="font-sans font-bold text-zinc-950 text-base uppercase tracking-wider">The Real Estate Scams</h4>
+                <h4 className="font-sans font-bold text-zinc-950 text-base uppercase tracking-wider">The Problem With Land in Nigeria</h4>
                 <p className="text-xs text-zinc-700 leading-relaxed font-sans">
-                  Sadly, most land in Nigeria has fake or messy paperwork. Scammers sell the same plot to multiple buyers, or sell land that secretly belongs to the government. This often leads to homes being demolished or families spending decades in court.
+                  Many properties in Nigeria have fake or messy paperwork. Scammers sell the same land to multiple people, or sell land that actually belongs to the government. This can lead to demolished homes or years in court.
                 </p>
               </div>
 
@@ -60,9 +60,9 @@ export default function About() {
                 <div className="inline-flex p-3 bg-emerald-100 rounded-sm text-emerald-800 font-bold">
                   <Scale className="w-5.5 h-5.5" />
                 </div>
-                <h4 className="font-sans font-bold text-zinc-950 text-base uppercase tracking-wider">Your Protective Shield</h4>
+                <h4 className="font-sans font-bold text-zinc-950 text-base uppercase tracking-wider">How We Protect You</h4>
                 <p className="text-xs text-zinc-700 leading-relaxed font-sans">
-                  Our professional legal and survey teams go straight to the local government land offices to inspect the original records. We also send our own surveyor to measure boundaries in person. With us, you are buying 100% peace of mind.
+                  Our legal and survey teams visit government land offices in person to check original records. We also send our own surveyor to measure the land boundaries. With us, you get peace of mind.
                 </p>
               </div>
             </div>
@@ -72,22 +72,22 @@ export default function About() {
               <div className="flex gap-4">
                 <Users className="w-5.5 h-5.5 text-zinc-800 flex-shrink-0 mt-0.5" />
                 <div className="space-y-1">
-                  <h4 className="font-sans font-bold text-zinc-950 text-xs uppercase tracking-wider">Unbiased Advice</h4>
-                  <p className="text-[11px] text-zinc-600 leading-normal">We don&apos;t sell land or take commissions from developers. We look out only for your safety.</p>
+                  <h4 className="font-sans font-bold text-zinc-950 text-xs uppercase tracking-wider">Honest Advice</h4>
+                  <p className="text-[11px] text-zinc-600 leading-normal">We do not take commissions from sellers. We work only for your safety.</p>
                 </div>
               </div>
               <div className="flex gap-4">
                 <Shield className="w-5.5 h-5.5 text-zinc-850 flex-shrink-0 mt-0.5" />
                 <div className="space-y-1">
                   <h4 className="font-sans font-bold text-zinc-950 text-xs uppercase tracking-wider">Real Checks</h4>
-                  <p className="text-[11px] text-zinc-600 leading-normal">We search government files in person and verify coordinates against official master plans.</p>
+                  <p className="text-[11px] text-zinc-600 leading-normal">We visit government offices in person and verify coordinates against official records.</p>
                 </div>
               </div>
               <div className="flex gap-4">
                 <FileText className="w-5.5 h-5.5 text-zinc-850 flex-shrink-0 mt-0.5" />
                 <div className="space-y-1">
-                  <h4 className="font-sans font-bold text-zinc-950 text-xs uppercase tracking-wider">Secure Paperwork</h4>
-                  <p className="text-[11px] text-zinc-600 leading-normal">We write secure contracts and help you register your ownership safely with the state.</p>
+                  <h4 className="font-sans font-bold text-zinc-950 text-xs uppercase tracking-wider">Safe Contracts</h4>
+                  <p className="text-[11px] text-zinc-600 leading-normal">We write strong contracts and help you register your ownership with the government.</p>
                 </div>
               </div>
             </div>
@@ -109,13 +109,13 @@ export default function About() {
             
             <div className="p-5 rounded-sm border border-zinc-200 bg-white shadow-sm -mt-4 relative z-20 mx-3 space-y-2.5">
               <span className="text-[9px] uppercase tracking-widest bg-zinc-900 text-white font-mono font-bold px-2.5 py-1 rounded-sm inline-block">
-                GFilled Group Legal Support
+                Gfilled Group
               </span>
               <h3 className="font-sans font-bold text-base sm:text-xl text-zinc-950 uppercase tracking-tight">
-                Legal Counselors Dedicated to Buyer Protection
+                Lawyers Who Protect Buyers
               </h3>
               <p className="text-[10px] sm:text-[11px] text-zinc-600 leading-relaxed font-sans">
-                Headed by legal specialists in Abuja and Lagos Land Registry audits. We supervise physical site border validation protocols and secure the true value of your estates.
+                Our team of legal experts in Abuja and Lagos checks government land records and supervises physical site inspections to make sure your investment is safe.
               </p>
             </div>
 
@@ -135,13 +135,13 @@ export default function About() {
         <div id="team" className="mt-16 sm:mt-32 pt-12 sm:pt-24 border-t border-zinc-200">
           <div className="text-center max-w-2xl mx-auto space-y-4 mb-12 sm:mb-20">
             <span className="text-[10px] font-mono font-black tracking-widest text-[#C5A059] uppercase block">
-              OUR INVESTIGATIVE DIRECTORS
+              MEET THE TEAM
             </span>
             <h3 className="font-sans text-xl sm:text-4xl font-extrabold text-zinc-950 uppercase tracking-tight">
-              MEET THE GFILLED SECURITY BOARD
+              The People Behind Gfilled
             </h3>
             <p className="text-zinc-600 text-sm leading-relaxed font-sans">
-              Our professional council integrates cadastral land survey engineering, title perfection jurisprudence, and remote escrow handling to safe-keep your generational wealth.
+              Our team combines legal experts, surveyors, and client support staff who work together to keep your property purchase safe and stress free.
             </p>
           </div>
 

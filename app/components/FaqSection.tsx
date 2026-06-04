@@ -14,8 +14,8 @@ export default function FaqSection() {
 
   const faqs: FAQItem[] = [
     {
-      question: "Are you a property developer, agent, or broker?",
-      answer: "No. Gfilled Group does NOT sell property, build houses, or act as an estate agent. We are independent legal experts and surveyors who work strictly for you—the buyer. We charge a flat fee and do not take commissions from developers. This means we have no reason to hide mistakes, and our advice is always 100% honest and neutral.",
+      question: "Do you sell properties or just check them?",
+      answer: "Both. Gfilled Group has vetted and trusted properties that we list for sale. These are properties we have personally inspected and can stand behind. We also offer our checking service for any property you find on your own. Whether you buy from us or somewhere else, we make sure the property is safe and the paperwork is correct. We charge a transparent flat fee and do not take hidden commissions.",
     },
     {
       question: "How do you check if the land boundary is safe?",
@@ -47,33 +47,33 @@ export default function FaqSection() {
           {/* Left Area: Title intro */}
           <div className="lg:col-span-5 space-y-6 text-left">
             <span className="text-[10px] font-mono font-black tracking-widest text-zinc-405 uppercase block">
-              TRANSACTIONAL TRANSPARENCY
+              QUICK ANSWERS
             </span>
             <h2 className="font-sans text-2xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-none">
               FREQUENTLY <br />
               ASKED <br />
               <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-xl sm:text-4xl block mt-1">
-                Inquiries.
+                    Questions.
               </span>
             </h2>
             <p className="text-zinc-700 text-sm leading-relaxed font-sans max-w-sm">
-              We believe in complete honesty. Read our simple answers below to learn how Gfilled keeps you safe from common real estate traps.
+              Honest answers to common questions about buying property safely in Nigeria.
             </p>
             
             <div className="pt-6 relative hidden lg:block">
               <div className="p-5 rounded-sm bg-zinc-50 border border-zinc-200 space-y-3">
                 <HelpCircle className="w-6 h-6 text-zinc-800" />
                 <p className="text-xs font-bold text-zinc-900 uppercase tracking-wider">
-                  Still Have Inquiries?
+                  Still Have Questions?
                 </p>
                 <p className="text-xs text-zinc-600 font-sans leading-relaxed">
-                  Our regulatory partners and attorneys are online to conduct instant remote beacon checks.
+                  Our team is ready to help. Reach out to us anytime.
                 </p>
                 <a 
                   href="#contact"
                   className="text-xs font-sans font-bold text-[#C5A059] hover:text-zinc-950 flex items-center gap-1.5 pt-1 uppercase tracking-wider transition-colors"
                 >
-                  Ask our legal panel →
+                  Contact Us →
                 </a>
               </div>
             </div>

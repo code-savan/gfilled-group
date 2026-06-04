@@ -7,45 +7,45 @@ export default function HowItWorks() {
   const steps = [
     {
       num: "01",
-      title: "1. Free 15-Minute Advice Call",
-      desc: "Schedule a friendly phone or WhatsApp call with our legal team. Tell us about the property you are looking at, and we will tell you the immediate warning signs to watch out for.",
+      title: "1. Free 15 Minute Advice Call",
+      desc: "Schedule a friendly phone or WhatsApp call with our legal team. Tell us about the property and we will tell you the warning signs to watch for.",
       icon: Calendar,
-      inclusion: "Instant Safety Check Call",
+      inclusion: "Free Safety Call",
     },
     {
       num: "02",
-      title: "2. Government Paperwork Check",
-      desc: "Our legal teams physically visit the land registries in Lagos and Abuja. We check original government record files to confirm the seller is the true owner and that nobody has sued them over the land.",
+      title: "2. Government Records Check",
+      desc: "Our legal team visits the land registries in Lagos and Abuja in person. We check official records to confirm the seller truly owns the land and nobody is fighting over it in court.",
       icon: FileSearch,
-      inclusion: "Official Registry Search",
+      inclusion: "Official Records Check",
     },
     {
       num: "03",
       title: "3. Measuring the Land in Person",
-      desc: "We send licensed surveyors to visit the property. They measure physical boundaries in person with precise digital GPS to make sure neighboring plots do not overlap your land.",
+      desc: "We send licensed surveyors to the property. They measure the boundaries with digital GPS to make sure neighboring plots do not overlap your land.",
       icon: ShieldCheck,
-      inclusion: "GPS Survey Verification",
+      inclusion: "GPS Survey Check",
     },
     {
       num: "04",
-      title: "4. Clear Written Peace-of-Mind Report",
-      desc: "We combine what we found at the state registry, the surveyor's maps, and the developer's history into a straightforward written report advising you whether it is safe to buy or best to walk away.",
+      title: "4. Clear Written Report",
+      desc: "We combine everything we found into a straightforward written report that tells you whether it is safe to buy or better to walk away.",
       icon: ClipboardList,
       inclusion: "Written Safety Report",
     },
     {
       num: "05",
-      title: "5. Safe Contracts & Protected Payments",
-      desc: "Our lawyers write your Purchase Agreements safely so your money is guarded. We can also hold your payments securely, releasing funds only when all inspection results are 100% successful.",
+      title: "5. Safe Contracts and Protected Payments",
+      desc: "Our lawyers write safe purchase agreements. We can also hold your payments securely and only release the money when all checks are 100% complete.",
       icon: PenTool,
-      inclusion: "Solid Buyer Contracts",
+      inclusion: "Protected Payments",
     },
     {
       num: "06",
-      title: "6. Registering Your Ownership",
-      desc: "We handle all the state bureaucracy to officially register your name in the government records as the sole, absolute owner of the property.",
+      title: "6. Register Your Ownership",
+      desc: "We handle all the government paperwork to register your name as the official owner of the property.",
       icon: Sparkles,
-      inclusion: "Official State Registration",
+      inclusion: "Government Registration",
     },
   ];
 
@@ -56,16 +56,16 @@ export default function HowItWorks() {
         {/* Title Block */}
         <div className="text-center space-y-4 max-w-3xl mx-auto mb-12 sm:mb-24">
           <span className="text-[10px] font-mono font-black tracking-widest text-zinc-400 uppercase block">
-            OUR DETAILED CHECKING PROCESS
+            HOW IT WORKS
           </span>
           <h2 className="font-sans text-2xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-tight">
-            Our Security Blueprint <br />
+            Simple Steps to <br />
             <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-xl sm:text-4xl block mt-1">
-              Preventing Scams Before You Pay.
+                  Buy Property Safely.
             </span>
           </h2>
           <p className="text-zinc-700 text-sm leading-relaxed max-w-xl mx-auto font-sans">
-            We guide you every step of the way, from our first chat to registering your name as the official property owner. Here is how we keep you 100% safe.
+            We guide you from our first chat to registering your name as the official owner. Here is how we keep you safe.
           </p>
         </div>
 
@@ -95,7 +95,7 @@ export default function HowItWorks() {
                 </div>
 
                 <div className="mt-8 pt-4 border-t border-zinc-200 flex items-center justify-between text-[10px] font-mono">
-                  <span className="text-zinc-405 uppercase tracking-wider font-extrabold">Deliverable:</span>
+                  <span className="text-zinc-405 uppercase tracking-wider font-extrabold">You Get:</span>
                   <span className="text-zinc-900 font-extrabold tracking-wider uppercase">{s.inclusion}</span>
                 </div>
               </div>

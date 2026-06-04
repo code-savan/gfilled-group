@@ -34,16 +34,16 @@ export default function WhyChooseUs() {
         {/* Header Block */}
         <div className="space-y-4 text-center max-w-3xl mx-auto mb-12 sm:mb-24">
           <span className="text-[10px] font-mono font-black tracking-widest text-[#C5A059] uppercase block">
-            THE BLIND METHOD VS. SECURED PURCHASING
+            WHY WE ARE DIFFERENT
           </span>
           <h2 className="font-sans text-2xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-tight">
-            Assumptions Cost Millions. <br />
+            Dont Lose Money to <br />
             <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-xl sm:text-4xl block mt-1">
-              We Deliver Absolute Objectivity.
+                  Avoidable Property Mistakes.
             </span>
           </h2>
           <p className="text-zinc-700 text-sm leading-relaxed max-w-xl mx-auto font-sans">
-            Buying land in Nigeria is usually very risky for the buyer. When you buy through an agent who gets a sales commission, they may not tell you about paperwork issues. We act as your private shield, looking out ONLY for your safety.
+            Buying land in Nigeria can be risky. Many agents work on commission and may hide problems with the property. We work for you and only you.
           </p>
         </div>
 
@@ -58,17 +58,31 @@ export default function WhyChooseUs() {
                 </div>
                 <div>
                   <h3 className="font-sans font-black text-xs text-zinc-950 uppercase tracking-widest">
-                    The Blind Purchase
+                    Buying Blind
                   </h3>
-                  <p className="text-[9px] font-mono text-red-700 uppercase font-bold mt-1">HIGH RISK EXPOSURE</p>
+                  <p className="text-[9px] font-mono text-red-700 uppercase font-bold mt-1">Higher Risk</p>
                 </div>
               </div>
 
               <div className="space-y-5">
                 <div className="p-4 sm:p-5 rounded-sm bg-white border border-red-100 shadow-xs text-left">
-                  <h4 className="text-[9px] font-black text-red-700 uppercase font-mono tracking-widest">RELATIVE CONTROL</h4>
+                  <h4 className="text-[9px] font-black text-red-700 uppercase font-mono tracking-widest">Trusting Friends or Family</h4>
                   <p className="text-xs text-zinc-750 leading-relaxed mt-1.5 font-sans">
-                    “My brother’s friend is an agent. He verified it personally.” 90% of diaspora family-facilitated purchases result in cost fraud or double-allocated swamp titles.
+                    "My brother's friend is an agent. He checked the property." Many people lose money when they rely on family members who do not have the right expertise.
+                  </p>
+                </div>
+                
+                <div className="p-4 sm:p-5 rounded-sm bg-white border border-red-100 shadow-xs text-left">
+                  <h4 className="text-[9px] font-black text-red-700 uppercase font-mono tracking-widest">Fancy Brochures</h4>
+                  <p className="text-xs text-zinc-750 leading-relaxed mt-1.5 font-sans">
+                    Buying based on a marketing brochure that promises documents are "in process." Some properties get demolished when the government rejects the layout.
+                  </p>
+                </div>
+
+                <div className="p-4 sm:p-5 rounded-sm bg-white border border-red-100 shadow-xs text-left">
+                  <h4 className="text-[9px] font-black text-red-700 uppercase font-mono tracking-widest">Hidden Commissions</h4>
+                  <p className="text-xs text-zinc-750 leading-relaxed mt-1.5 font-sans">
+                    Agents work for the seller and rush you to pay. Problems with the title are hidden until after you have already paid your money.
                   </p>
                 </div>
                 
@@ -90,7 +104,7 @@ export default function WhyChooseUs() {
 
             <div className="mt-8 pt-5 border-t border-red-100 text-left">
               <span className="text-[9px] font-mono font-bold text-red-700 tracking-wider">
-                RISK ACCUMULATION: 82.4% AVERAGE ADJACENT LOSS RATE
+                Most buyers who skip proper checks end up with serious problems
               </span>
             </div>
           </div>
@@ -104,9 +118,9 @@ export default function WhyChooseUs() {
                 </div>
                 <div>
                   <h3 className="font-sans font-black text-xs text-zinc-950 uppercase tracking-widest">
-                    Gfilled Verification Standard
+                    Gfilled Standard
                   </h3>
-                  <p className="text-[9px] font-mono text-zinc-505 uppercase font-bold mt-1">100% REGISTRY SECURE</p>
+                  <p className="text-[9px] font-mono text-zinc-505 uppercase font-bold mt-1">Thorough and Reliable</p>
                 </div>
               </div>
 
@@ -134,25 +148,25 @@ export default function WhyChooseUs() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="p-6 sm:p-8 rounded-sm bg-zinc-50 border border-zinc-200 hover:border-zinc-450 hover:shadow-xs transition-all text-left">
             <Crosshair className="w-8 h-8 text-zinc-900 mb-5" />
-            <h4 className="font-sans font-black text-xs text-zinc-950 uppercase tracking-wider">Lagos & Abuja Experts</h4>
+            <h4 className="font-sans font-black text-xs text-zinc-950 uppercase tracking-wider">Lagos and Abuja Experts</h4>
             <p className="text-xs text-zinc-650 mt-2.5 leading-relaxed font-sans">
-              We focus 100% on Abuja and Lagos registries because these cities have the most complicated land rules and property scams.
+              We focus on Abuja and Lagos because these cities have the most complicated land rules and the highest number of property scams.
             </p>
           </div>
           
           <div className="p-6 sm:p-8 rounded-sm bg-zinc-50 border border-zinc-200 hover:border-zinc-450 hover:shadow-xs transition-all text-left">
             <Users className="w-8 h-8 text-zinc-900 mb-5" />
-            <h4 className="font-sans font-black text-xs text-zinc-950 uppercase tracking-wider font-sans">Lawyers On Your Team</h4>
+            <h4 className="font-sans font-black text-xs text-zinc-950 uppercase tracking-wider font-sans">Lawyers on Your Side</h4>
             <p className="text-xs text-zinc-650 mt-2.5 leading-relaxed font-sans">
-              We aren&apos;t just an inspection company—we are a fully registered legal division. If things look risky, our team has the official power to step in and secure your funds.
+              We are not just inspectors. We are a registered legal team. If something looks wrong, we have the authority to step in and protect your money.
             </p>
           </div>
 
           <div className="p-6 sm:p-8 rounded-sm bg-zinc-50 border border-zinc-200 hover:border-zinc-450 hover:shadow-xs transition-all text-left">
             <Activity className="w-8 h-8 text-zinc-900 mb-5" />
-            <h4 className="font-sans font-black text-xs text-zinc-950 uppercase tracking-wider">Guaranteed In-Person Checks</h4>
+            <h4 className="font-sans font-black text-xs text-zinc-950 uppercase tracking-wider">Guaranteed Physical Checks</h4>
             <p className="text-xs text-zinc-650 mt-2.5 leading-relaxed font-sans">
-              We don&apos;t do guesswork. We physically visit state archives, check the historical deeds of previous owners, and double-check coordinates to stop any boundary disputes.
+              We do not guess. We physically visit government archives, check ownership history, and double check coordinates to prevent boundary disputes.
             </p>
           </div>
         </div>

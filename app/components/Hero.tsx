@@ -129,7 +129,7 @@ export default function Hero({ onVerifyClick, onConsultClick }: HeroProps) {
             >
               <span className="w-2 h-2 bg-[#C5A059] rounded-sm animate-pulse"></span>
               <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-white font-sans">
-                Nigeria&apos;s Independent Buyer Protection Firm
+                Your Trusted Property Protection Team
               </span>
             </motion.div>
 
@@ -141,13 +141,13 @@ export default function Hero({ onVerifyClick, onConsultClick }: HeroProps) {
               className="space-y-3"
             >
               <h1 className="font-sans font-extrabold text-3xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.1] sm:leading-[1.08] uppercase text-white">
-                WE SECURE THE <br className="hidden sm:inline" />
+                Buy Property in <br className="hidden sm:inline" />
                 <span className="text-white">
-                  FUTURE OF REAL ESTATE
+                  Nigeria With Confidence
                 </span>
               </h1>
               <p className="text-zinc-100 text-sm sm:text-base leading-relaxed max-w-xl font-medium drop-shadow-md">
-                Don&apos;t walk into a property scam or lose your savings. We double-check official government ownership records, physically visit and survey the land using GPS, and protect your payments in Lagos and Abuja.
+                Do not lose your savings to a property scam. We check government land records, visit the property to measure the boundaries, and protect your payments every step of the way in Lagos and Abuja.
               </p>
             </motion.div>
 
@@ -193,10 +193,10 @@ export default function Hero({ onVerifyClick, onConsultClick }: HeroProps) {
               {/* Header inside validation mockup */}
               <div className="flex justify-between items-center mb-3 text-left">
                 <span className="text-[9px] uppercase font-bold tracking-widest text-zinc-400 font-mono">
-                  EXECUTIVE BRIEFING
+                  QUICK INTRO
                 </span>
                 <span className="px-2.5 py-1 rounded-sm bg-[#C5A059] text-zinc-950 text-[9px] font-black tracking-wider uppercase">
-                  VIDEO OVERVIEW
+                  WATCH VIDEO
                 </span>
               </div>
 
@@ -287,13 +287,13 @@ export default function Hero({ onVerifyClick, onConsultClick }: HeroProps) {
 
                     <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/25 to-transparent z-10" />
 
-                    {/* Informative Video Overlay - Satisfies "Watch this video to ease in" */}
+                    {/* Informative Video Overlay */}
                     <div className="absolute bottom-4 left-4 right-4 text-left z-20 bg-black/50 backdrop-blur-md p-3.5 rounded-sm border border-white/10">
                       <p className="text-[10px] uppercase font-mono font-black text-[#C5A059] tracking-widest mb-1 animate-pulse">
-                        START HERE
+                        WATCH THIS FIRST
                       </p>
                       <p className="text-xs text-zinc-100 font-sans font-bold leading-normal">
-                        Watch this video of Gfilled Group&apos;s approach to secure real estate deals in Nigeria. It will ease you into the rest of our security services.
+                        See how Gfilled Group helps you buy property safely in Nigeria without getting scammed.
                       </p>
                     </div>
                   </div>
@@ -319,7 +319,7 @@ export default function Hero({ onVerifyClick, onConsultClick }: HeroProps) {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="rounded-sm bg-black/60 backdrop-blur-md border border-white/10 p-5 md:py-6 md:px-8 flex flex-col sm:flex-row items-center justify-between text-center sm:text-left gap-4 md:gap-6">
             <span className="text-[10px] text-[#C5A059] font-mono font-black tracking-widest uppercase">
-              Physical Registry Integrations:
+              Government Registries We Check:
             </span>
             <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4 sm:gap-10 text-xs text-zinc-100 font-mono">
               <span className="flex items-center gap-1 font-semibold">
@@ -332,7 +332,7 @@ export default function Hero({ onVerifyClick, onConsultClick }: HeroProps) {
               </span>
               <span className="flex items-center gap-1 font-semibold">
                 <span className="w-1.5 h-1.5 bg-[#C5A059] rounded-sm"></span>
-                FEDERAL CAUTION INDEX
+                FEDERAL LAND CAUTION LIST
               </span>
               <span className="flex items-center gap-1 font-semibold">
                 <span className="w-1.5 h-1.5 bg-[#C5A059] rounded-sm"></span>
@@ -340,7 +340,7 @@ export default function Hero({ onVerifyClick, onConsultClick }: HeroProps) {
               </span>
             </div>
             <div className="text-[9px] text-[#C5A059] font-sans uppercase font-bold tracking-widest hidden md:block">
-              Absolute Neutrality
+              100% Neutral
             </div>
           </div>
         </div>

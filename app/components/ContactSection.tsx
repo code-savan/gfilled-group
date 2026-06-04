@@ -47,16 +47,16 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
           <div className="lg:col-span-5 space-y-12">
             <div className="space-y-4">
               <span className="text-[10px] font-mono tracking-widest font-black uppercase text-zinc-400 block">
-                CONTACT THE REGISTRY OFFICE
+                GET IN TOUCH
               </span>
               <h2 className="font-sans text-2xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-tight">
-                Secure Your Assets. <br />
+                Lets Talk About <br />
                 <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-xl sm:text-4xl block mt-1">
-                  Absolute Legal Certainty.
+                  Your Property Safety.
                 </span>
               </h2>
               <p className="text-zinc-700 text-sm leading-relaxed font-sans mt-4">
-                Please don&apos;t pay any deposits or sign any contracts before we double-check the paperwork. Our legal team will physically visit the government land offices to protect your money.
+                Please do not pay any deposits or sign any contracts before we check the paperwork. Our legal team will visit the government land offices to protect your money.
               </p>
             </div>
 
@@ -67,9 +67,9 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-sans font-bold text-xs sm:text-sm text-zinc-950 uppercase tracking-wide">Direct Hotline Calls (Abuja/Lagos)</h4>
-                  <p className="text-sm text-zinc-700 font-mono font-bold mt-1">+234 (0) 906 888 8848</p>
-                  <p className="text-[10px] text-zinc-400 font-mono">Available Mon–Sat: 8am – 6pm (GMT +1)</p>
+                  <h4 className="font-sans font-bold text-xs sm:text-sm text-zinc-950 uppercase tracking-wide">Call or WhatsApp Us</h4>
+                  <p className="text-sm text-zinc-700 font-mono font-bold mt-1">09135213710</p>
+                  <p className="text-[10px] text-zinc-400 font-mono">WhatsApp: 08165459779 | Mon–Sat: 8am – 6pm (GMT +1)</p>
                 </div>
               </div>
 
@@ -78,9 +78,9 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-sans font-bold text-xs sm:text-sm text-zinc-950 uppercase tracking-wide">Secured Document Portal</h4>
+                  <h4 className="font-sans font-bold text-xs sm:text-sm text-zinc-950 uppercase tracking-wide">Email Us</h4>
                   <p className="text-sm text-zinc-700 font-mono font-bold mt-1">legal@gfilled.com</p>
-                  <p className="text-[10px] text-zinc-400 font-sans">Send titles, surveys, or deed files directly for encrypted legal review.</p>
+                  <p className="text-[10px] text-zinc-400 font-sans">Send your documents for legal review.</p>
                 </div>
               </div>
 
@@ -89,12 +89,9 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-sans font-bold text-xs sm:text-sm text-zinc-950 uppercase tracking-wide">Specialist Headquarters</h4>
+                  <h4 className="font-sans font-bold text-xs sm:text-sm text-zinc-950 uppercase tracking-wide">Our Office</h4>
                   <p className="text-xs text-zinc-700 mt-1 font-semibold leading-relaxed font-sans">
-                    GFilled Group, Plot 522, Gimbia Street, Area 11, Garki, Abuja, Nigeria.
-                  </p>
-                  <p className="text-[10px] text-zinc-400 font-sans mt-0.5">
-                    Lagos Liaison: Alpha Beach Road, Lekki Phase 1, Lagos.
+                    Valencia Garden Estate, Louisiana 2, The White House, Lokogoma, Abuja.
                   </p>
                 </div>
               </div>
@@ -105,12 +102,15 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
               <div className="flex items-center gap-2 text-[#C5A059]">
                 <ShieldCheck className="w-5 h-5" />
                 <h4 className="font-sans font-extrabold text-xs uppercase tracking-wider">
-                  DIASPORA SECURITY GUARANTEE
+                  FOLLOW US
                 </h4>
               </div>
-              <p className="text-[11px] text-zinc-305 leading-relaxed font-sans">
-                We manage remote transactions index-by-index. Funds stay protected under registry guidelines with real GPS beacon matching at AGIS (Abuja) and Lands Bureau (Lagos).
-              </p>
+              <div className="flex flex-wrap gap-3">
+                <a href="https://www.instagram.com/gfilled_group/" target="_blank" rel="noopener noreferrer" className="text-[11px] text-zinc-300 hover:text-[#C5A059] transition-colors font-sans underline underline-offset-2">Instagram</a>
+                <a href="https://web.facebook.com/people/Gfilled-Gr/" target="_blank" rel="noopener noreferrer" className="text-[11px] text-zinc-300 hover:text-[#C5A059] transition-colors font-sans underline underline-offset-2">Facebook</a>
+                <a href="https://www.tiktok.com/@gfilledgroup" target="_blank" rel="noopener noreferrer" className="text-[11px] text-zinc-300 hover:text-[#C5A059] transition-colors font-sans underline underline-offset-2">TikTok</a>
+                <a href="https://www.linkedin.com/in/gfilled-group-8b6148363" target="_blank" rel="noopener noreferrer" className="text-[11px] text-zinc-300 hover:text-[#C5A059] transition-colors font-sans underline underline-offset-2">LinkedIn</a>
+              </div>
             </div>
           </div>
 
@@ -121,10 +121,10 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="border-b border-zinc-100 pb-5 mb-6">
                     <h3 className="font-sans font-bold text-lg text-zinc-950 uppercase tracking-tight">
-                      Initiate verification checkout
+                      Book a Free Consultation
                     </h3>
                     <p className="text-xs text-zinc-500 mt-1 font-sans">
-                      Fill out your transaction scenario details to schedule legal representation.
+                      Fill in your details and we will get back to you to discuss your property safety needs.
                     </p>
                   </div>
 
@@ -204,7 +204,7 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
                     {/* Service Target Selection */}
                     <div className="space-y-2">
                       <label className="text-[10px] font-bold uppercase tracking-wider text-zinc-950 font-mono">
-                        Verification Plan Target
+                        Service Needed
                       </label>
                       <select
                         name="selectedService"
@@ -212,10 +212,10 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
                         onChange={handleInputChange}
                         className="w-full p-3.5 rounded-sm border border-zinc-200 bg-zinc-50/30 text-zinc-950 text-xs font-sans focus:border-zinc-950 focus:bg-white focus:outline-none transition-all"
                       >
-                        <option value="free-call">Free 15-Minute Legal Consultation (₦0)</option>
+                        <option value="free-call">Free 15 Minute Legal Consultation (₦0)</option>
                         <option value="basic-title">Title Registry Verification (₦100,000)</option>
-                        <option value="compliance-pack">Due Diligence & Compliance (₦270,000)</option>
-                        <option value="full-escrow">Full Transaction Escrow & perfection (₦500k+)</option>
+                        <option value="compliance-pack">Full Safety Check (₦270,000)</option>
+                        <option value="full-escrow">Complete Buying Service (₦500k+)</option>
                       </select>
                     </div>
 

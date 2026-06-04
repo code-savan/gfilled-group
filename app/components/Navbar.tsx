@@ -44,13 +44,13 @@ export default function Navbar({ onNavigate, activeSection }: NavbarProps) {
 
   // Complete list for the aesthetic menu sheet
   const allNavItems = [
-    { label: "Home Base", id: "home", desc: "Main entry & luxury property verification" },
-    { label: "Our Story & Security Team", id: "about", desc: "GFilled Group legal background" },
-    { label: "Advisory & Escrow Services", id: "services", desc: "Standardized verification packages" },
-    { label: "Our Verification Edge", id: "why-choose", desc: "Physical registry checks vs. blind speculation" },
-    { label: "Our Step-By-Step Process", id: "how-it-works", desc: "Discover how we protect clients remote" },
-    { label: "Client Success Stories", id: "testimonials", desc: "Verified testimonials from domestic & diaspora" },
-    { label: "Book Consultation", id: "contact", desc: "Initiate coordinates indexing and escrows" },
+    { label: "Home", id: "home", desc: "Welcome to Gfilled Group" },
+    { label: "About Us", id: "about", desc: "Our team and what we stand for" },
+    { label: "Our Services", id: "services", desc: "Property verification and protection plans" },
+    { label: "Why Choose Us", id: "why-choose", desc: "How we are different from agents" },
+    { label: "How It Works", id: "how-it-works", desc: "Simple steps to secure your property" },
+    { label: "Testimonials", id: "testimonials", desc: "Stories from real clients" },
+    { label: "Contact Us", id: "contact", desc: "Book a free consultation" },
   ];
 
   const handleLinkClick = (id: string) => {
@@ -213,10 +213,10 @@ export default function Navbar({ onNavigate, activeSection }: NavbarProps) {
                 {/* Subtitle intro */}
                 <div className="mt-8 mb-6">
                   <span className="text-[10px] font-mono tracking-widest font-black uppercase text-[#C5A059] block mb-1">
-                    EXECUTIVE INDEX NAVIGATION
+                    MENU
                   </span>
                   <p className="text-zinc-500 text-xs leading-relaxed font-sans">
-                    Select a core segment below. Every featured asset and package sits inside our registered escrow checking and cadastral surveying index.
+                    Please select a section below to learn more about how we can help you buy property safely in Nigeria.
                   </p>
                 </div>
 
@@ -249,10 +249,10 @@ export default function Navbar({ onNavigate, activeSection }: NavbarProps) {
               <div className="pt-8 border-t border-zinc-100 space-y-4 text-xs">
                 <div className="flex items-center gap-2 text-zinc-700 font-mono text-[11px]">
                   <Scale className="w-4 h-4 text-[#C5A059]" />
-                  <span>GFilled Group Legal Index</span>
+                  <span>Gfilled Group</span>
                 </div>
                 <p className="text-[10px] text-zinc-400 leading-relaxed font-sans">
-                  Registry files and physical titles in Lagos & Abuja are managed directly under custody registries: Plot 522, Gimbia Street, Garki, Abuja.
+                  Valencia Garden Estate, Louisiana 2, The White House, Lokogoma, Abuja.
                 </p>
               </div>
             </motion.div>

@@ -18,7 +18,7 @@ export default function ChatWidget() {
     {
       role: "assistant",
       content:
-        "Welcome to the GFilled Legal & Property Advisory Group. I am your concierge, backed directly by our registered attorneys at GFilled Group.\n\nAre you planning to acquire real estate in Lagos or Abuja? If you have coordinates, pending titles, or developer details, let's inspect the legal validity risk index.",
+        "Welcome to Gfilled Group. I am here to help you buy property safely in Nigeria.\n\nAre you looking to buy land or a home in Lagos or Abuja? Tell me about the property and I will explain how we can help you check it.",
     },
   ]);
   const [inputMessage, setInputMessage] = useState("");
@@ -33,28 +33,28 @@ export default function ChatWidget() {
   }, [messages, isLoading]);
 
   const presetQueries = [
-    { label: "What is a C of O?", key: "c_of_o", query: "What is a Certificate of Occupancy (C of O) and why is checking it critical?" },
-    { label: "Diaspora Blindspots", key: "diaspora", query: "What are the biggest real estate scams targeting diaspora buyers remotely?" },
-    { label: "Abuja Land Registry", key: "abuja", query: "How does GFilled verify property coordinates at Abuja AGIS and Lagos Bureau?" },
-    { label: "Due Diligence Fees", key: "due_diligence", query: "What is included in the GFilled ₦270,000 Due Diligence package?" },
+    { label: "What is a C of O?", key: "c_of_o", query: "What is a Certificate of Occupancy and why is it important?" },
+    { label: "Buying From Abroad", key: "diaspora", query: "What are the biggest risks for diaspora buyers in Nigeria?" },
+    { label: "How You Check", key: "abuja", query: "How does Gfilled check properties in Lagos and Abuja?" },
+    { label: "Prices", key: "due_diligence", query: "How much does your property checking service cost?" },
   ];
 
   const PREDEFINED_ANSWERS: Record<string, { text: string; whatsappLink: string }> = {
     c_of_o: {
-      text: "A Certificate of Occupancy (C of O) is the highest land title in Nigeria, certifying 99-year lease ownership.\n\nVerifying it is critical because:\n- Physical clerk searches expose sophisticated document forgeries.\n- State GIS checks reveal if the layout conflicts with public reserves or committed government lands.\n- Site verification catches overlapping beacon coordinates.\n\nTo ensure complete safety, please choose to chat with us on WhatsApp or fill the booking form.",
-      whatsappLink: "https://wa.me/2349135213710?text=Hello%20GFilled%2C%20I%20would%20like%20to%20verify%20a%20Certificate%20of%20Occupancy%20%28C%20of%20O%29%20for%20a%20property%20interest."
+      text: "A Certificate of Occupancy (C of O) is the main land document in Nigeria. It proves who legally owns the property.\n\nWe check if the C of O is real by visiting the government land office in person. Many fake documents look real on paper, so a physical check is very important.\n\nTo get started, please chat with us on WhatsApp or fill the booking form below.",
+      whatsappLink: "https://wa.me/2348165459779?text=Hello%20GFilled%2C%20I%20would%20like%20to%20verify%20a%20Certificate%20of%20Occupancy%20for%20a%20property."
     },
     diaspora: {
-      text: "Diaspora buyers purchasing remotely in Lagos or Abuja face major risk vectors:\n\n- Relatives inflating land prices or buying low-value, swampy plots in your name.\n- Buying based on brochures claiming a title is 'in progress' when it is actually landlocked or disputed.\n- Multiple allocations where the same plot is sold to several buyers.\n\nTo establish total capital immunity, please click below to chat on WhatsApp or fill our secure booking form.",
-      whatsappLink: "https://wa.me/2349135213710?text=Hello%20GFilled%2C%20I%20am%20a%20diaspora%20buyer%20and%20want%2520to%2520discuss%2520remote%2520purchasing%2520safeguards."
+      text: "Buying property from abroad comes with unique risks:\n\n- Family members may buy poor quality land without proper checks.\n- Sellers may promise documents that do not actually exist.\n- The same land may be sold to multiple people.\n\nWe help diaspora buyers avoid these problems by checking everything in person.\n\nPlease click below to chat on WhatsApp or fill our booking form.",
+      whatsappLink: "https://wa.me/2348165459779?text=Hello%20GFilled%2C%20I%20am%20a%20diaspora%20buyer%20and%20want%20to%20discuss%20buying%20property%20safely."
     },
     abuja: {
-      text: "We conduct on-the-ground coordinate searches at the Abuja AGIS Land Registry & Lagos Lands Bureau.\n\nOur steps are:\n1. Checking registered owner deeds and history index.\n2. Confirming the master plan layout to ensure no highway or green area encroachment.\n3. Walking the land with a surveyor to match physical DGPS beacons.\n\nTo start a verification, you can chat with us on WhatsApp or fill our secure booking form below.",
-      whatsappLink: "https://wa.me/2349135213710?text=Hello%20GFilled%2C%20I%20need%20a%20registry%20search%20at%20Abuja%20AGIS%20or%20Lagos%20Lands%20Bureau."
+      text: "We check properties by going directly to the government land offices in Abuja (AGIS) and Lagos (Lands Bureau).\n\nHere is what we do:\n1. Check the official ownership records at the registry.\n2. Confirm the land is not marked for government use.\n3. Visit the property with a surveyor to measure the boundaries.\n\nTo start, chat with us on WhatsApp or fill the booking form.",
+      whatsappLink: "https://wa.me/2348165459779?text=Hello%20GFilled%2C%20I%20need%20a%20property%20check%20in%20Abuja%20or%20Lagos."
     },
     due_diligence: {
-      text: "Our complete Due Diligence & Compliance Package is flat-rate at ₦270,000:\n\n- On-site surveyor GPS coordinated sweep for safety against overlaps.\n- Full certified registry searches at Abuja AGIS or Lagos Lands Bureau.\n- Detailed history check of previous disputes & developer clearances.\n- Official signed buyer protection report by GFilled Group.\n\nTo move forward, please chat with us on WhatsApp or submit your checklist using our booking form below.",
-      whatsappLink: "https://wa.me/2349135213710?text=Hello%20GFilled%2C%20I%20want%20to%20book%20the%20Due%20Diligence%20and%20Compliance%20Package."
+      text: "Our complete checking package costs a flat ₦270,000 and includes:\n\n- A surveyor visiting the land with GPS equipment.\n- Full checks at the government land registry.\n- History check for court disputes or problems.\n- A signed safety report from our team.\n\nTo get started, chat with us on WhatsApp or fill the booking form below.",
+      whatsappLink: "https://wa.me/2348165459779?text=Hello%20GFilled%2C%20I%20want%20to%20book%20the%20full%20property%20checking%20package."
     }
   };
 
@@ -103,7 +103,7 @@ export default function ChatWidget() {
         setIsLoading(false);
       } else {
         // Custom inquiry - redirect to WhatsApp with custom text pre-filled
-        const whatsappUrl = `https://wa.me/2349135213710?text=${encodeURIComponent(`Hello GFilled, I have an inquiry regarding: ${textToSend}`)}`;
+        const whatsappUrl = `https://wa.me/2348165459779?text=${encodeURIComponent(`Hello GFilled, I have an inquiry regarding: ${textToSend}`)}`;
         
         setMessages((prev) => [
           ...prev,
@@ -144,9 +144,9 @@ export default function ChatWidget() {
             </div>
             <div className="text-left hidden sm:block">
               <p className="text-[9px] font-bold tracking-widest font-mono uppercase text-[#C5A059]">
-                Legal Advisory Desk
+                Gfilled Group
               </p>
-              <p className="text-xs font-bold text-stone-100 font-sans">Chat with Concierge</p>
+              <p className="text-xs font-bold text-stone-100 font-sans">Chat With Us</p>
             </div>
           </motion.button>
         )}
@@ -169,15 +169,12 @@ export default function ChatWidget() {
                 </div>
                 <div className="text-left">
                   <h3 className="font-sans font-black text-xs uppercase tracking-wider flex items-center gap-2">
-                    GFilled Concierge
-                    <span className="text-[8px] font-mono tracking-widest bg-zinc-800 text-[#C5A059] px-2 py-0.5 rounded-sm font-black uppercase border border-zinc-700">
-                      LEGAL PRACTICE
-                    </span>
+                    Gfilled Group
                   </h3>
                   <div className="flex items-center gap-1.5 mt-0.5">
                     <span className="w-1.5 h-1.5 rounded-sm bg-emerald-500 animate-pulse"></span>
                     <p className="text-[10px] text-zinc-400 font-mono tracking-wider uppercase font-bold">
-                      GFilled Group Advisor Active
+                      Online and Ready to Help
                     </p>
                   </div>
                 </div>
@@ -217,11 +214,11 @@ export default function ChatWidget() {
                       {!isUser && (idx > 0 || m.isPreset) && (
                         <div className="mt-4 pt-3.5 border-t border-zinc-150 flex flex-col gap-2">
                           <p className="text-[9px] font-bold text-zinc-500 uppercase font-mono tracking-wider text-left">
-                            Choose Your Verification Action:
+                            Next Steps:
                           </p>
                           <div className="flex flex-col sm:flex-row gap-2">
                             <a
-                              href={m.whatsappLink || "https://wa.me/2349135213710?text=Hello%20GFilled%2C%20I%20would%20like%20to%20consult%20regarding%20some%20property%20safety%20checks."}
+                              href={m.whatsappLink || "https://wa.me/2348165459779?text=Hello%20GFilled%2C%20I%20would%20like%20to%20consult%20regarding%20some%20property%20safety%20checks."}
                               target="_blank"
                               rel="noopener noreferrer"
                               className="flex-1 py-2 px-2 bg-zinc-950 hover:bg-[#C5A059] text-white hover:text-zinc-950 rounded-sm text-[10px] font-bold uppercase tracking-wider text-center transition-colors flex items-center justify-center gap-1.5 cursor-pointer shadow-sm border border-zinc-900"
@@ -253,7 +250,7 @@ export default function ChatWidget() {
                   <div className="p-3.5 bg-white border border-zinc-200 rounded-sm flex items-center gap-2 shadow-xs">
                     <Loader2 className="w-4 h-4 text-[#C5A059] animate-spin" />
                     <span className="text-zinc-500 text-[10px] uppercase font-mono tracking-widest font-bold">
-                      Indexing coordinates database...
+                      Finding the best answer...
                     </span>
                   </div>
                 </div>
@@ -280,16 +277,16 @@ export default function ChatWidget() {
             <div className="p-4 bg-white border-t border-zinc-200">
               <div className="mb-2.5 flex items-center justify-between">
                 <span className="text-[9px] font-mono font-bold text-zinc-400 uppercase tracking-widest">
-                  Quick Direct Link:
+                  WhatsApp:
                 </span>
                 <a
-                  href="https://wa.me/2349135213710"
+                  href="https://wa.me/2348165459779"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-[10px] font-bold text-[#C5A059] hover:text-[#9E7F43] transition-colors uppercase tracking-wider font-mono cursor-pointer"
                 >
                   <Phone className="w-3 h-3" />
-                  WhatsApp Hotline: +234 913 521 3710
+                  +234 816 545 9779
                 </a>
               </div>
 
@@ -304,7 +301,7 @@ export default function ChatWidget() {
                   type="text"
                   value={inputMessage}
                   onChange={(e) => setInputMessage(e.target.value)}
-                  placeholder="Ask about deeds, coordinates, C of O..."
+                  placeholder="Ask us anything about buying property..."
                   className="flex-1 p-3.5 rounded-sm bg-zinc-50 border border-zinc-205 text-zinc-950 text-xs font-sans focus:border-zinc-950 focus:bg-white focus:outline-none transition-all"
                 />
                 <button
@@ -316,7 +313,7 @@ export default function ChatWidget() {
                 </button>
               </form>
               <div className="text-[9.5px]/none text-center text-zinc-400 font-mono tracking-widest mt-3 uppercase">
-                GFilled Protected Encryption &bull; GFilled Group
+                Gfilled Group
               </div>
             </div>
           </motion.div>

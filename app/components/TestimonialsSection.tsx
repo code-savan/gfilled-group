@@ -40,16 +40,16 @@ export default function TestimonialsSection() {
       <div className="max-w-4xl mx-auto px-6 sm:px-8 relative z-10">
         <div className="text-center space-y-4 max-w-3xl mx-auto mb-12 sm:mb-20">
           <span className="text-[10px] font-mono font-black tracking-widest text-zinc-400 uppercase block">
-            CLIENT AUDIT REVIEWS
+            WHAT OUR CLIENTS SAY
           </span>
           <h2 className="font-sans text-2xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-tight">
-            Security Stories. <br />
+            Real Stories From <br />
             <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-xl sm:text-4xl block mt-1">
-              Tested in Registries, Trusted by Buyers.
+                  Real Clients.
             </span>
           </h2>
           <p className="text-zinc-700 text-sm leading-relaxed max-w-xl mx-auto font-sans">
-            Over 240 diaspora and domestic clients have secured their real estate legacy using our flat-fee independent due diligence services.
+            Over 240 clients at home and abroad have trusted us to help them buy property safely.
           </p>
         </div>
 

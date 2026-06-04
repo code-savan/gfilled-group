@@ -36,9 +36,9 @@ export default function ServicesSection({ onBookConsultation }: ServicesSectionP
   };
 
   const getPackageLevel = (total: number) => {
-    if (total >= 500000) return { name: "Full Custom Escrow & Perfection Support", badge: "Comprehensive Shield" };
-    if (total >= 270000) return { name: "Full Due Diligence & Compliance", badge: "Recommended Safety" };
-    return { name: "Basic Title Auditing Check", badge: "Essential Inspection" };
+    if (total >= 500000) return { name: "Complete Buying Service & Escrow", badge: "Full Protection" };
+    if (total >= 270000) return { name: "Full Safety Check", badge: "Recommended" };
+    return { name: "Basic Title Check", badge: "Essential" };
   };
 
   const customTotal = calculateTotal();
@@ -48,48 +48,48 @@ export default function ServicesSection({ onBookConsultation }: ServicesSectionP
     {
       name: "Property Title Check Only",
       price: "₦100,000",
-      description: "We check the official government database to see if the property papers are real and who the true owner is.",
+      description: "We check the official government records to confirm the property papers are real and who the true owner is.",
       features: [
         "Lagos or Abuja land office checks",
-        "Check if Certificate of Occupancy is real",
+        "Check if the Certificate of Occupancy is real",
         "Confirm who legally owns the property",
-        "A simple summary report of what we found",
-        "Fast 48-hour results",
+        "A simple summary report of our findings",
+        "Fast 48 hour results",
       ],
-      badge: "Essential Check",
-      actionText: "Select Base Plan",
+      badge: "Starter",
+      actionText: "Choose This Plan",
       popular: false,
     },
     {
       name: "Full Safety & Survey Package",
       price: "₦270,000",
-      description: "Our most popular choice. We verify the paperwork and send in-person surveyors to physically measure the land.",
+      description: "Our most popular choice. We verify the paperwork and send surveyors to measure the land in person.",
       features: [
         "Everything in the Property Title Check",
-        "We physically visit the plot of land to measure it",
+        "We visit the land to measure it physically",
         "Confirm with GPS that boundaries match maps",
-        "Check the developer or builder's history",
-        "Confirm nobody is fighting over the plot in court",
-        "A clear, written advisory report from our lawyers",
+        "Check the developer or builder history",
+        "Confirm nobody is fighting over the land in court",
+        "A clear written report from our lawyers",
       ],
-      badge: "Standard Shield",
-      actionText: "Select Safety Package",
+      badge: "Popular",
+      actionText: "Choose This Plan",
       popular: true,
     },
     {
       name: "Complete Buying Service & Escrow",
       price: "₦500,000+",
-      description: "Complete hands-on care, from negotiating prices and signing paperwork to holding funds and state registration.",
+      description: "Full support from start to finish, from reviewing contracts and holding your payments to registering your name with the government.",
       features: [
-        "Help you negotiated prices face-to-face",
-        "Draft and read all sales contracts safely",
-        "Safe and secure Escrow payment holding",
-        "Officially register your title with the state",
-        "Coordination of construction-integrity checks",
-        "Governor's Consent registration support",
+        "Help you negotiate prices face to face",
+        "Draft and review all sales contracts",
+        "Safe escrow payment holding",
+        "Register your title with the government",
+        "Coordination of construction checks",
+        "Government approval and registration support",
       ],
-      badge: "Full Safe Guard",
-      actionText: "Select Escrow Package",
+      badge: "Complete",
+      actionText: "Choose This Plan",
       popular: false,
     },
   ];
@@ -101,16 +101,16 @@ export default function ServicesSection({ onBookConsultation }: ServicesSectionP
         {/* Spacious Title Block */}
         <div className="text-center space-y-4 max-w-3xl mx-auto mb-12 sm:mb-24">
           <span className="text-[10px] font-mono tracking-widest font-black uppercase text-zinc-400 block">
-            OUR PROTECTION PACKAGES
+            OUR SERVICES
           </span>
           <h2 className="font-sans text-2xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-tight">
-            Our Standardized Pricing.<br />
+            Simple Pricing. <br />
             <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-xl sm:text-4xl block mt-1">
-              Flat Rates, Direct Representation.
+                  No Hidden Fees.
             </span>
           </h2>
           <p className="text-zinc-700 text-sm leading-relaxed max-w-xl mx-auto font-sans">
-            Unlike local agents who charge hidden purchase commissions and thrive on speed, Gfilled operates purely under transparent flat fee legal guidance.
+            Unlike agents who charge hidden commissions, Gfilled charges a clear flat fee. You know exactly what you pay for and there are no surprises.
           </p>
         </div>
 
@@ -185,15 +185,15 @@ export default function ServicesSection({ onBookConsultation }: ServicesSectionP
             {/* Customizer Left Column */}
             <div className="lg:col-span-7 space-y-8">
               <div>
-                <span className="text-[9px] font-bold font-mono tracking-widest text-[#C5A059] uppercase bg-amber-50 px-2.5 py-1 rounded-sm border border-[#C5A059]/10">
-                  BUILD YOUR CUSTOM PROTECTION
-                </span>
-                <h3 className="font-sans text-xl sm:text-3xl font-extrabold mt-4 text-zinc-950 uppercase tracking-tight">
-                  Custom Property Security Builder
-                </h3>
-                <p className="text-xs text-zinc-650 mt-2 font-sans">
-                  Select and add optional registry parameters or physical surveying checks. Your dynamic total updates live below.
-                </p>
+            <span className="text-[9px] font-bold font-mono tracking-widest text-[#C5A059] uppercase bg-amber-50 px-2.5 py-1 rounded-sm border border-[#C5A059]/10">
+              BUILD YOUR OWN PLAN
+            </span>
+            <h3 className="font-sans text-xl sm:text-3xl font-extrabold mt-4 text-zinc-950 uppercase tracking-tight">
+              Customize Your Protection
+            </h3>
+            <p className="text-xs text-zinc-650 mt-2 font-sans">
+              Pick the checks you need. Your total updates automatically below.
+            </p>
               </div>
 
               <div className="space-y-4">
@@ -207,15 +207,15 @@ export default function ServicesSection({ onBookConsultation }: ServicesSectionP
                   />
                   <div>
                     <div className="flex flex-wrap items-center gap-2">
-                      <p className="text-xs font-bold text-zinc-950 uppercase tracking-wide">
-                        Detailed Government Records Check
-                      </p>
+                    <p className="text-xs font-bold text-zinc-950 uppercase tracking-wide">
+                      Government Land Records Check
+                    </p>
                       <span className="text-[10px] font-mono font-bold text-[#C5A059] bg-white border border-[#C5A059]/20 px-2 py-0.5 rounded-sm">
                         +₦80,000
                       </span>
                     </div>
                     <p className="text-[11px] text-zinc-500 mt-1 leading-relaxed">
-                      Our legal team visits the state land registry in person to review original deeds, legal disputes, and confirm if anyone else claims ownership.
+                      Our legal team visits the government land office in person to review original records and confirm the true owner.
                     </p>
                   </div>
                 </label>
@@ -230,9 +230,9 @@ export default function ServicesSection({ onBookConsultation }: ServicesSectionP
                   />
                   <div>
                     <div className="flex flex-wrap items-center gap-2">
-                      <p className="text-xs font-bold text-zinc-950 uppercase tracking-wide">
-                        In-Person Land Surveyor GPS Check
-                      </p>
+                    <p className="text-xs font-bold text-zinc-950 uppercase tracking-wide">
+                      Physical Land Surveyor Check
+                    </p>
                       <span className="text-[10px] font-mono font-bold text-[#C5A059] bg-white border border-[#C5A059]/20 px-2 py-0.5 rounded-sm">
                         +₦90,000
                       </span>
@@ -253,15 +253,15 @@ export default function ServicesSection({ onBookConsultation }: ServicesSectionP
                   />
                   <div>
                     <div className="flex flex-wrap items-center gap-2">
-                      <p className="text-xs font-bold text-zinc-950 uppercase tracking-wide">
-                        Developer History & Government Clearances
-                      </p>
+                    <p className="text-xs font-bold text-zinc-950 uppercase tracking-wide">
+                      Developer Background Check
+                    </p>
                       <span className="text-[10px] font-mono font-bold text-[#C5A059] bg-white border border-[#C5A059]/20 px-2 py-0.5 rounded-sm">
                         +₦50,000
                       </span>
                     </div>
                     <p className="text-[11px] text-zinc-500 mt-1 leading-relaxed">
-                      We check the developer or builder&apos;s legal standing, verify they have state permission to build, and review their history of construction lawsuits.
+                      We check if the developer has proper permission to build and look into their history of legal problems.
                     </p>
                   </div>
                 </label>
@@ -276,15 +276,15 @@ export default function ServicesSection({ onBookConsultation }: ServicesSectionP
                   />
                   <div>
                     <div className="flex flex-wrap items-center gap-2">
-                      <p className="text-xs font-bold text-zinc-950 uppercase tracking-wide">
-                        Legal Contract Vetting & Custom Drafting
-                      </p>
+                    <p className="text-xs font-bold text-zinc-950 uppercase tracking-wide">
+                      Contract Review & Drafting
+                    </p>
                       <span className="text-[10px] font-mono font-bold text-[#C5A059] bg-white border border-[#C5A059]/20 px-2 py-0.5 rounded-sm">
                         +₦120,000
                       </span>
                     </div>
                     <p className="text-[11px] text-zinc-500 mt-1 leading-relaxed">
-                      We read, write, or rewrite your Purchase Agreement and land deeds, putting dynamic safety clauses in place to guard your money if the seller backs out.
+                      We review and write your purchase agreements with safety clauses that protect your money if the seller does not follow through.
                     </p>
                   </div>
                 </label>
@@ -299,15 +299,15 @@ export default function ServicesSection({ onBookConsultation }: ServicesSectionP
                   />
                   <div>
                     <div className="flex flex-wrap items-center gap-2">
-                      <p className="text-xs font-bold text-zinc-950 uppercase tracking-wide">
-                        Governor’s Consent & Title Perfection filing
-                      </p>
+                    <p className="text-xs font-bold text-zinc-950 uppercase tracking-wide">
+                      Title Registration & Government Filing
+                    </p>
                       <span className="text-[10px] font-mono font-bold text-[#C5A059] bg-white border border-[#C5A059]/20 px-2 py-0.5 rounded-sm">
                         +₦250,000
                       </span>
                     </div>
                     <p className="text-[11px] text-zinc-500 mt-1 leading-relaxed">
-                      We handle all the state paperwork from start to finish, officially registering your title as the absolute owner in government records.
+                      We handle all the government paperwork to register your name as the official owner of the property.
                     </p>
                   </div>
                 </label>
@@ -318,9 +318,9 @@ export default function ServicesSection({ onBookConsultation }: ServicesSectionP
             <div className="lg:col-span-5 lg:sticky lg:top-28">
               <div className="rounded-sm border border-zinc-350 bg-zinc-50 p-4 sm:p-8 space-y-5 sm:space-y-6">
                 <div>
-                  <span className="text-[9px] font-mono font-black text-zinc-500 uppercase tracking-wider block mb-4">
-                    ESTIMATED COMPLIANCE BREAKDOWN
-                  </span>
+                <span className="text-[9px] font-mono font-black text-zinc-500 uppercase tracking-wider block mb-4">
+                  PRICE BREAKDOWN
+                </span>
                   
                   <div className="text-zinc-600 text-xs flex justify-between py-2 border-b border-zinc-200/60">
                     <span>Base Title Audit:</span>
