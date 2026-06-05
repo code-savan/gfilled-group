@@ -13,7 +13,7 @@ export default function WhyChooseUs() {
     {
       factor: "Checking the Papers",
       blind: "Developer's Brochures: Believing the glossy sales booklet when it says the papers (C of O) are legal, or trusting family land divided on a scrap of paper.",
-      verified: "Checking Official Registries: We physically go to government land registries in Abuja and Lagos to confirm true ownership and check for active court disputes or unpaid state loans.",
+      verified: "Checking Official Registries: We physically go to government land registries to confirm true ownership and check for active court disputes or unpaid state loans.",
     },
     {
       factor: "Checking the Boundaries",
@@ -36,7 +36,7 @@ export default function WhyChooseUs() {
           <span className="text-[10px] font-mono font-black tracking-widest text-[#C5A059] uppercase block">
             WHY WE ARE DIFFERENT
           </span>
-          <h2 className="font-sans text-2xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-tight">
+          <h2 className="font-sans text-2xl sm:text-5xl font-extrabold tracking-tight text-brand-dark uppercase leading-tight">
             Dont Lose Money to <br />
             <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-xl sm:text-4xl block mt-1">
                   Avoidable Property Mistakes.
@@ -57,7 +57,7 @@ export default function WhyChooseUs() {
                   <ShieldAlert className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="font-sans font-black text-xs text-zinc-950 uppercase tracking-widest">
+                  <h3 className="font-sans font-black text-xs text-brand-dark uppercase tracking-widest">
                     Buying Blind
                   </h3>
                   <p className="text-[9px] font-mono text-red-700 uppercase font-bold mt-1">Higher Risk</p>
@@ -113,11 +113,11 @@ export default function WhyChooseUs() {
           <div className="lg:col-span-7 rounded-sm border border-zinc-200 bg-white p-5 sm:p-8 md:p-10 flex flex-col justify-between shadow-xs">
             <div className="space-y-8">
               <div className="flex items-center gap-3.5 pb-5 border-b border-zinc-150 text-left">
-                <div className="p-3 bg-zinc-50 border border-zinc-200 text-zinc-950 rounded-sm">
+                <div className="p-3 bg-zinc-50 border border-zinc-200 text-brand-dark rounded-sm">
                   <ShieldCheck className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="font-sans font-black text-xs text-zinc-950 uppercase tracking-widest">
+                  <h3 className="font-sans font-black text-xs text-brand-dark uppercase tracking-widest">
                     Gfilled Standard
                   </h3>
                   <p className="text-[9px] font-mono text-zinc-505 uppercase font-bold mt-1">Thorough and Reliable</p>
@@ -129,7 +129,7 @@ export default function WhyChooseUs() {
                 {contrasts.map((c, i) => (
                   <div key={i} className="grid grid-cols-1 md:grid-cols-12 gap-4 pb-6 border-b border-zinc-150 last:border-b-0 last:pb-0">
                     <div className="md:col-span-3">
-                      <p className="text-[9px] font-black text-zinc-950 uppercase font-mono tracking-wider">{c.factor}</p>
+                      <p className="text-[9px] font-black text-brand-dark uppercase font-mono tracking-wider">{c.factor}</p>
                     </div>
                     <div className="md:col-span-4 bg-red-50/50 p-3 rounded-sm border border-red-100">
                       <p className="text-[11px] text-zinc-650 leading-relaxed font-sans">{c.blind}</p>
@@ -148,15 +148,15 @@ export default function WhyChooseUs() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="p-6 sm:p-8 rounded-sm bg-zinc-50 border border-zinc-200 hover:border-zinc-450 hover:shadow-xs transition-all text-left">
             <Crosshair className="w-8 h-8 text-zinc-900 mb-5" />
-            <h4 className="font-sans font-black text-xs text-zinc-950 uppercase tracking-wider">Lagos and Abuja Experts</h4>
+            <h4 className="font-sans font-black text-xs text-brand-dark uppercase tracking-wider">Nationwide Coverage</h4>
             <p className="text-xs text-zinc-650 mt-2.5 leading-relaxed font-sans">
-              We focus on Abuja and Lagos because these cities have the most complicated land rules and the highest number of property scams.
+              We operate across all states in Nigeria. Whether your property is in Lagos, Abuja, Port Harcourt, or any other city, our team can verify it.
             </p>
           </div>
           
           <div className="p-6 sm:p-8 rounded-sm bg-zinc-50 border border-zinc-200 hover:border-zinc-450 hover:shadow-xs transition-all text-left">
             <Users className="w-8 h-8 text-zinc-900 mb-5" />
-            <h4 className="font-sans font-black text-xs text-zinc-950 uppercase tracking-wider font-sans">Lawyers on Your Side</h4>
+            <h4 className="font-sans font-black text-xs text-brand-dark uppercase tracking-wider font-sans">Lawyers on Your Side</h4>
             <p className="text-xs text-zinc-650 mt-2.5 leading-relaxed font-sans">
               We are not just inspectors. We are a registered legal team. If something looks wrong, we have the authority to step in and protect your money.
             </p>
@@ -164,7 +164,7 @@ export default function WhyChooseUs() {
 
           <div className="p-6 sm:p-8 rounded-sm bg-zinc-50 border border-zinc-200 hover:border-zinc-450 hover:shadow-xs transition-all text-left">
             <Activity className="w-8 h-8 text-zinc-900 mb-5" />
-            <h4 className="font-sans font-black text-xs text-zinc-950 uppercase tracking-wider">Guaranteed Physical Checks</h4>
+            <h4 className="font-sans font-black text-xs text-brand-dark uppercase tracking-wider">Guaranteed Physical Checks</h4>
             <p className="text-xs text-zinc-650 mt-2.5 leading-relaxed font-sans">
               We do not guess. We physically visit government archives, check ownership history, and double check coordinates to prevent boundary disputes.
             </p>

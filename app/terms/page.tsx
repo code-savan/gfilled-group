@@ -9,7 +9,7 @@ export default function TermsPage() {
       {/* Sticky Nav */}
       <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-zinc-200">
         <div className="max-w-4xl mx-auto px-6 py-3.5 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 text-zinc-500 hover:text-zinc-950 transition-colors group">
+          <Link href="/" className="flex items-center gap-2 text-zinc-500 hover:text-brand-dark transition-colors group">
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
             <span className="text-xs font-bold uppercase tracking-widest">Back</span>
           </Link>
@@ -23,7 +23,7 @@ export default function TermsPage() {
           <span className="text-[10px] font-mono tracking-widest font-black uppercase text-[#C5A059] block">
             TERMS & AGREEMENTS
           </span>
-          <h1 className="font-sans text-3xl sm:text-5xl font-extrabold uppercase tracking-tight leading-tight text-zinc-950">
+          <h1 className="font-sans text-3xl sm:text-5xl font-extrabold uppercase tracking-tight leading-tight text-brand-dark">
             How We Work Together
           </h1>
           <p className="font-serif italic text-zinc-500 text-base sm:text-lg max-w-xl mx-auto">
@@ -39,7 +39,7 @@ export default function TermsPage() {
           <div className="flex gap-4 items-start bg-zinc-50 p-5 sm:p-6 rounded-sm border border-zinc-200">
             <Heart className="w-8 h-8 text-[#C5A059] shrink-0 mt-1" />
             <div className="space-y-1">
-              <h2 className="font-sans font-bold text-sm text-zinc-950 uppercase tracking-wider">We Work ONLY For You</h2>
+              <h2 className="font-sans font-bold text-sm text-brand-dark uppercase tracking-wider">We Work ONLY For You</h2>
               <p className="text-xs sm:text-sm text-zinc-600 leading-relaxed">
                 Most estate agents in Nigeria work for the seller because they want to grab a quick sales commission. <b>We do things differently.</b> GFilled Group does NOT sell properties, and we do NOT take commissions from developers. You hire us, and we work 100% on your side to make sure nobody tricks you.
               </p>
@@ -55,7 +55,7 @@ export default function TermsPage() {
                 <h3 className="font-sans font-extrabold text-sm text-zinc-900 uppercase tracking-wide">1. Our Main Job: Double-Checking Every Detail</h3>
               </div>
               <p className="text-xs sm:text-sm text-zinc-600 leading-relaxed pl-10">
-                When you hire us to review a piece of property or a building in Abuja or Lagos, we will:
+                When you hire us to review a piece of property or a building in Nigeria, we will:
               </p>
               <ul className="list-disc pl-14 text-xs sm:text-sm text-zinc-600 space-y-2">
                 <li>Send physical land surveyors out to confirm that the land is on solid, legal ground—not inside a swamp, a forest reserve, or mapped for future government roads.</li>
@@ -72,7 +72,7 @@ export default function TermsPage() {
                 <h3 className="font-sans font-extrabold text-sm text-zinc-900 uppercase tracking-wide">2. Honest Realities About Land Searches</h3>
               </div>
               <p className="text-xs sm:text-sm text-zinc-600 leading-relaxed pl-10">
-                We perform our investigations based on the actual physical status of the ground and active files found at the Lagos and Abuja land offices. While we are extremely thorough and catch almost every red flag, some records can be kept secret or delayed by local offices. We always write down exactly what we find, honestly and clearly, so you can make your final choice safely.
+                We perform our investigations based on the actual physical status of the ground and active files found at the relevant land offices across Nigeria. While we are extremely thorough and catch almost every red flag, some records can be kept secret or delayed by local offices. We always write down exactly what we find, honestly and clearly, so you can make your final choice safely.
               </p>
             </div>
 
@@ -104,7 +104,7 @@ export default function TermsPage() {
           <div className="pt-8 border-t border-zinc-200 text-center">
             <Link
               href="/"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-zinc-950 hover:bg-[#C5A059] text-white hover:text-zinc-950 rounded-sm text-xs font-bold uppercase tracking-widest transition-all"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-brand-dark hover:bg-[#C5A059] text-white hover:text-brand-dark rounded-sm text-xs font-bold uppercase tracking-widest transition-all"
             >
               Return Home
             </Link>

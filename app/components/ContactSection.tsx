@@ -13,9 +13,9 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
     fullName: "",
     email: "",
     phone: "",
-    diasporaLocation: "local", // local, uk, us, ca, other
-    selectedService: prefilledPackage || "free-call", // free-call, basic-title, compliance-pack, custom-pack
-    propertyRegion: "abuja", // abuja, lagos, other
+    diasporaLocation: "local",
+    selectedService: prefilledPackage || "free-call",
+    propertyRegion: "fct",
     propertyDetails: "",
   });
 
@@ -49,7 +49,7 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
               <span className="text-[10px] font-mono tracking-widest font-black uppercase text-zinc-400 block">
                 GET IN TOUCH
               </span>
-              <h2 className="font-sans text-2xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-tight">
+              <h2 className="font-sans text-2xl sm:text-5xl font-extrabold tracking-tight text-brand-dark uppercase leading-tight">
                 Lets Talk About <br />
                 <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-xl sm:text-4xl block mt-1">
                   Your Property Safety.
@@ -63,33 +63,33 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
             {/* Direct Contact Indices */}
             <div className="space-y-8">
               <div className="flex gap-4 items-start">
-                <div className="p-3 bg-zinc-100 border border-zinc-200 rounded-sm text-zinc-950">
+                <div className="p-3 bg-zinc-100 border border-zinc-200 rounded-sm text-brand-dark">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-sans font-bold text-xs sm:text-sm text-zinc-950 uppercase tracking-wide">Call or WhatsApp Us</h4>
+                  <h4 className="font-sans font-bold text-xs sm:text-sm text-brand-dark uppercase tracking-wide">Call or WhatsApp Us</h4>
                   <p className="text-sm text-zinc-700 font-mono font-bold mt-1">09135213710</p>
                   <p className="text-[10px] text-zinc-400 font-mono">WhatsApp: 08165459779 | Mon–Sat: 8am – 6pm (GMT +1)</p>
                 </div>
               </div>
 
               <div className="flex gap-4 items-start">
-                <div className="p-3 bg-zinc-100 border border-zinc-200 rounded-sm text-zinc-950">
+                <div className="p-3 bg-zinc-100 border border-zinc-200 rounded-sm text-brand-dark">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-sans font-bold text-xs sm:text-sm text-zinc-950 uppercase tracking-wide">Email Us</h4>
+                  <h4 className="font-sans font-bold text-xs sm:text-sm text-brand-dark uppercase tracking-wide">Email Us</h4>
                   <p className="text-sm text-zinc-700 font-mono font-bold mt-1">legal@gfilled.com</p>
                   <p className="text-[10px] text-zinc-400 font-sans">Send your documents for legal review.</p>
                 </div>
               </div>
 
               <div className="flex gap-4 items-start">
-                <div className="p-3 bg-zinc-100 border border-zinc-200 rounded-sm text-zinc-950">
+                <div className="p-3 bg-zinc-100 border border-zinc-200 rounded-sm text-brand-dark">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-sans font-bold text-xs sm:text-sm text-zinc-950 uppercase tracking-wide">Our Office</h4>
+                  <h4 className="font-sans font-bold text-xs sm:text-sm text-brand-dark uppercase tracking-wide">Our Office</h4>
                   <p className="text-xs text-zinc-700 mt-1 font-semibold leading-relaxed font-sans">
                     Valencia Garden Estate, Louisiana 2, The White House, Lokogoma, Abuja.
                   </p>
@@ -98,7 +98,7 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
             </div>
 
             {/* Micro warning note */}
-            <div className="p-6 rounded-sm bg-zinc-950 text-white space-y-3.5 shadow-sm border border-zinc-900">
+            <div className="p-6 rounded-sm bg-brand-dark text-white space-y-3.5 shadow-sm border border-blue-900">
               <div className="flex items-center gap-2 text-[#C5A059]">
                 <ShieldCheck className="w-5 h-5" />
                 <h4 className="font-sans font-extrabold text-xs uppercase tracking-wider">
@@ -120,7 +120,7 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
               {!isSubmitted ? (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="border-b border-zinc-100 pb-5 mb-6">
-                    <h3 className="font-sans font-bold text-lg text-zinc-950 uppercase tracking-tight">
+                    <h3 className="font-sans font-bold text-lg text-brand-dark uppercase tracking-tight">
                       Book a Free Consultation
                     </h3>
                     <p className="text-xs text-zinc-500 mt-1 font-sans">
@@ -131,7 +131,7 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* Name */}
                     <div className="space-y-2">
-                      <label className="text-[10px] font-bold uppercase tracking-wider text-zinc-950 font-mono">
+                      <label className="text-[10px] font-bold uppercase tracking-wider text-brand-dark font-mono">
                         Full Name *
                       </label>
                       <input
@@ -141,20 +141,20 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
                         value={formData.fullName}
                         onChange={handleInputChange}
                         placeholder="e.g. Dr. Charles Nwosu"
-                        className="w-full p-3.5 rounded-sm border border-zinc-200 bg-zinc-50/30 text-zinc-950 text-xs font-sans focus:border-zinc-950 focus:bg-white focus:outline-none transition-all"
+                        className="w-full p-3.5 rounded-sm border border-zinc-200 bg-zinc-50/30 text-brand-dark text-xs font-sans focus:border-brand-dark focus:bg-white focus:outline-none transition-all"
                       />
                     </div>
 
                     {/* Residence Selection */}
                     <div className="space-y-2">
-                      <label className="text-[10px] font-bold uppercase tracking-wider text-zinc-950 font-mono">
+                      <label className="text-[10px] font-bold uppercase tracking-wider text-brand-dark font-mono">
                         Client Residence
                       </label>
                       <select
                         name="diasporaLocation"
                         value={formData.diasporaLocation}
                         onChange={handleInputChange}
-                        className="w-full p-3.5 rounded-sm border border-zinc-200 bg-zinc-50/30 text-zinc-950 text-xs font-sans focus:border-zinc-950 focus:bg-white focus:outline-none transition-all"
+                        className="w-full p-3.5 rounded-sm border border-zinc-200 bg-zinc-50/30 text-brand-dark text-xs font-sans focus:border-brand-dark focus:bg-white focus:outline-none transition-all"
                       >
                         <option value="local">Inside Nigeria (Local Buyer)</option>
                         <option value="uk">United Kingdom (UK Diaspora)</option>
@@ -169,7 +169,7 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* Email */}
                     <div className="space-y-2">
-                      <label className="text-[10px] font-bold uppercase tracking-wider text-zinc-950 font-mono">
+                      <label className="text-[10px] font-bold uppercase tracking-wider text-brand-dark font-mono">
                         Primary Email Address *
                       </label>
                       <input
@@ -179,13 +179,13 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
                         value={formData.email}
                         onChange={handleInputChange}
                         placeholder="e.g. charles@nwosu.org"
-                        className="w-full p-3.5 rounded-sm border border-zinc-200 bg-zinc-50/30 text-zinc-950 text-xs font-sans focus:border-zinc-950 focus:bg-white focus:outline-none transition-all"
+                        className="w-full p-3.5 rounded-sm border border-zinc-200 bg-zinc-50/30 text-brand-dark text-xs font-sans focus:border-brand-dark focus:bg-white focus:outline-none transition-all"
                       />
                     </div>
 
                     {/* Phone */}
                     <div className="space-y-2">
-                      <label className="text-[10px] font-bold uppercase tracking-wider text-zinc-950 font-mono">
+                      <label className="text-[10px] font-bold uppercase tracking-wider text-brand-dark font-mono">
                         Phone Number (WhatsApp Preferred) *
                       </label>
                       <input
@@ -195,7 +195,7 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
                         value={formData.phone}
                         onChange={handleInputChange}
                         placeholder="e.g. +44 7911 123456"
-                        className="w-full p-3.5 rounded-sm border border-zinc-200 bg-zinc-50/30 text-zinc-950 text-xs font-sans focus:border-zinc-950 focus:bg-white focus:outline-none transition-all"
+                        className="w-full p-3.5 rounded-sm border border-zinc-200 bg-zinc-50/30 text-brand-dark text-xs font-sans focus:border-brand-dark focus:bg-white focus:outline-none transition-all"
                       />
                     </div>
                   </div>
@@ -203,44 +203,46 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* Service Target Selection */}
                     <div className="space-y-2">
-                      <label className="text-[10px] font-bold uppercase tracking-wider text-zinc-950 font-mono">
+                      <label className="text-[10px] font-bold uppercase tracking-wider text-brand-dark font-mono">
                         Service Needed
                       </label>
                       <select
                         name="selectedService"
                         value={formData.selectedService}
                         onChange={handleInputChange}
-                        className="w-full p-3.5 rounded-sm border border-zinc-200 bg-zinc-50/30 text-zinc-950 text-xs font-sans focus:border-zinc-950 focus:bg-white focus:outline-none transition-all"
+                        className="w-full p-3.5 rounded-sm border border-zinc-200 bg-zinc-50/30 text-brand-dark text-xs font-sans focus:border-brand-dark focus:bg-white focus:outline-none transition-all"
                       >
-                        <option value="free-call">Free 15 Minute Legal Consultation (₦0)</option>
-                        <option value="basic-title">Title Registry Verification (₦100,000)</option>
-                        <option value="compliance-pack">Full Safety Check (₦270,000)</option>
-                        <option value="full-escrow">Complete Buying Service (₦500k+)</option>
+                        <option value="free-call">Free 15 Minute Legal Consultation (\u20A60)</option>
+                        <option value="essential">Essential Verification Plan (\u20A6100,000)</option>
+                        <option value="standard">Standard Due Diligence Plan (\u20A6250,000)</option>
+                        <option value="full-safety">Full Safety & Transaction Protection (\u20A6350,000)</option>
                       </select>
                     </div>
 
                     {/* Land Coordinate Registry region */}
                     <div className="space-y-2">
-                      <label className="text-[10px] font-bold uppercase tracking-wider text-zinc-950 font-mono">
+                      <label className="text-[10px] font-bold uppercase tracking-wider text-brand-dark font-mono">
                         Property Registry Location
                       </label>
                       <select
                         name="propertyRegion"
                         value={formData.propertyRegion}
                         onChange={handleInputChange}
-                        className="w-full p-3.5 rounded-sm border border-zinc-200 bg-zinc-50/30 text-zinc-950 text-xs font-sans focus:border-zinc-950 focus:bg-white focus:outline-none transition-all"
+                        className="w-full p-3.5 rounded-sm border border-zinc-200 bg-zinc-50/30 text-brand-dark text-xs font-sans focus:border-brand-dark focus:bg-white focus:outline-none transition-all"
                       >
-                        <option value="abuja">Abuja Municipal (AGIS Verifiable)</option>
-                        <option value="lagos">Lagos State Registry (Lands Bureau)</option>
-                        <option value="coastal">Lekki/Epe Corridor - Coastal Layouts</option>
-                        <option value="other">Other State Deeds Registries</option>
+                        <option value="fct">FCT Abuja (AGIS Verifiable)</option>
+                        <option value="lagos">Lagos State (Lands Bureau)</option>
+                        <option value="southwest">South West (Oyo, Ogun, Ondo, etc.)</option>
+                        <option value="southeast">South East / South South</option>
+                        <option value="north">Northern States</option>
+                        <option value="other">Other Locations in Nigeria</option>
                       </select>
                     </div>
                   </div>
 
                   {/* Coordinates information */}
                   <div className="space-y-2">
-                    <label className="text-[10px] font-bold uppercase tracking-wider text-zinc-950 font-mono">
+                    <label className="text-[10px] font-bold uppercase tracking-wider text-brand-dark font-mono">
                       Property survey coordinates, beacon numbers, or estate references
                     </label>
                     <textarea
@@ -249,13 +251,13 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
                       value={formData.propertyDetails}
                       onChange={handleInputChange}
                       placeholder="e.g. Beacon coordinates on survey plan, allocation number, or developer details if known."
-                      className="w-full p-3.5 rounded-sm border border-zinc-200 bg-zinc-50/30 text-zinc-950 text-xs font-sans focus:border-zinc-950 focus:bg-white focus:outline-none transition-all leading-relaxed"
+                      className="w-full p-3.5 rounded-sm border border-zinc-200 bg-zinc-50/30 text-brand-dark text-xs font-sans focus:border-brand-dark focus:bg-white focus:outline-none transition-all leading-relaxed"
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full py-4 px-4 sm:px-6 bg-zinc-950 hover:bg-zinc-800 text-white font-black tracking-widest text-[10px] sm:text-xs uppercase rounded-sm transition-all cursor-pointer flex items-center justify-center gap-2 border border-zinc-900 leading-tight"
+                    className="w-full py-4 px-4 sm:px-6 bg-brand-dark hover:bg-blue-800 text-white font-black tracking-widest text-[10px] sm:text-xs uppercase rounded-sm transition-all cursor-pointer flex items-center justify-center gap-2 border border-blue-900 leading-tight"
                   >
                     <Send className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white shrink-0" />
                     Book & Secure Representation
@@ -264,16 +266,16 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
               ) : (
                 // Checkout Success representation
                 <div className="text-center py-10 space-y-6">
-                  <div className="w-16 h-16 bg-zinc-100 border border-zinc-200 rounded-sm flex items-center justify-center mx-auto text-zinc-950 shadow-sm">
+                  <div className="w-16 h-16 bg-zinc-100 border border-zinc-200 rounded-sm flex items-center justify-center mx-auto text-brand-dark shadow-sm">
                     <CheckCircle2 className="w-9 h-9 text-[#C5A059]" />
                   </div>
                   
                   <div className="space-y-2 max-w-lg mx-auto">
-                    <h3 className="font-sans text-2xl font-extrabold text-zinc-950 uppercase tracking-tight">
+                    <h3 className="font-sans text-2xl font-extrabold text-brand-dark uppercase tracking-tight">
                       Protection checkout complete
                     </h3>
                     <p className="text-xs text-zinc-650 leading-relaxed font-sans">
-                      Thank you, <b className="text-zinc-950">{formData.fullName}</b>. Your booking parameters are securely compiled. An advisor from <b>GFilled Group</b> will review registry indexes and reach you shortly on <span className="font-mono text-zinc-950 font-bold underline">{formData.phone}</span>.
+                      Thank you, <b className="text-brand-dark">{formData.fullName}</b>. Your booking parameters are securely compiled. An advisor from <b>GFilled Group</b> will review registry indexes and reach you shortly on <span className="font-mono text-brand-dark font-bold underline">{formData.phone}</span>.
                     </p>
                   </div>
 
@@ -283,20 +285,20 @@ export default function ContactSection({ prefilledPackage }: ContactSectionProps
                     </p>
                     <div className="grid grid-cols-2 gap-2 text-zinc-600 font-sans">
                       <span>Selected Residence:</span>
-                      <span className="font-bold text-zinc-950 uppercase">{formData.diasporaLocation}</span>
+                      <span className="font-bold text-brand-dark uppercase">{formData.diasporaLocation}</span>
                       
                       <span>Protection level:</span>
-                      <span className="font-bold text-zinc-950 uppercase">{formData.selectedService}</span>
+                      <span className="font-bold text-brand-dark uppercase">{formData.selectedService}</span>
                       
                       <span>Target Registry:</span>
-                      <span className="font-bold text-zinc-950 uppercase">{formData.propertyRegion}</span>
+                      <span className="font-bold text-brand-dark uppercase">{formData.propertyRegion}</span>
                     </div>
                   </div>
 
                   <button
                     type="button"
                     onClick={() => setIsSubmitted(false)}
-                    className="inline-flex py-3.5 px-6 border border-zinc-300 rounded-sm text-xs font-black uppercase tracking-widest text-zinc-700 hover:text-zinc-950 hover:bg-zinc-50 transition-colors"
+                    className="inline-flex py-3.5 px-6 border border-zinc-300 rounded-sm text-xs font-black uppercase tracking-widest text-zinc-700 hover:text-brand-dark hover:bg-zinc-50 transition-colors"
                   >
                     Configure Another Search
                   </button>

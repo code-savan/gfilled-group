@@ -3,5 +3,6 @@
 @theme {
   --font-sans: var(--font-sans), ui-sans-serif, system-ui;
   --font-display: var(--font-display), "Cormorant Garamond", serif;
+  --color-brand-dark: #0D2032;
 }
 

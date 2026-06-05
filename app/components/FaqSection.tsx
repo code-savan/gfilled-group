@@ -49,7 +49,7 @@ export default function FaqSection() {
             <span className="text-[10px] font-mono font-black tracking-widest text-zinc-405 uppercase block">
               QUICK ANSWERS
             </span>
-            <h2 className="font-sans text-2xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-none">
+            <h2 className="font-sans text-2xl sm:text-5xl font-extrabold tracking-tight text-brand-dark uppercase leading-none">
               FREQUENTLY <br />
               ASKED <br />
               <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-xl sm:text-4xl block mt-1">
@@ -71,7 +71,7 @@ export default function FaqSection() {
                 </p>
                 <a 
                   href="#contact"
-                  className="text-xs font-sans font-bold text-[#C5A059] hover:text-zinc-950 flex items-center gap-1.5 pt-1 uppercase tracking-wider transition-colors"
+                  className="text-xs font-sans font-bold text-[#C5A059] hover:text-brand-dark flex items-center gap-1.5 pt-1 uppercase tracking-wider transition-colors"
                 >
                   Contact Us →
                 </a>
@@ -95,7 +95,7 @@ export default function FaqSection() {
                   >
                     <div className="flex gap-4">
                       {/* Premium Number indicator */}
-                      <span className="text-[11px] font-mono font-bold text-zinc-400 group-hover:text-zinc-950 transition-colors mt-1">
+                      <span className="text-[11px] font-mono font-bold text-zinc-400 group-hover:text-brand-dark transition-colors mt-1">
                         {String(index + 1).padStart(2, "0")}
                       </span>
                       <span className="text-sm font-sans font-extrabold uppercase tracking-widest text-zinc-900 md:text-sm group-hover:text-[#C5A059] transition-colors leading-relaxed">

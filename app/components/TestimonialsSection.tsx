@@ -42,7 +42,7 @@ export default function TestimonialsSection() {
           <span className="text-[10px] font-mono font-black tracking-widest text-zinc-400 uppercase block">
             WHAT OUR CLIENTS SAY
           </span>
-          <h2 className="font-sans text-2xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-tight">
+          <h2 className="font-sans text-2xl sm:text-5xl font-extrabold tracking-tight text-brand-dark uppercase leading-tight">
             Real Stories From <br />
             <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-xl sm:text-4xl block mt-1">
                   Real Clients.
@@ -82,7 +82,7 @@ export default function TestimonialsSection() {
 
                 {/* Client Meta block */}
                 <div className="flex items-center gap-4 pt-4 border-t border-zinc-150">
-                  <div className="w-12 h-12 rounded-sm bg-zinc-950 flex items-center justify-center flex-shrink-0 border border-zinc-800">
+                  <div className="w-12 h-12 rounded-sm bg-brand-dark flex items-center justify-center flex-shrink-0 border border-zinc-800">
                     <span className="text-white text-xs font-bold font-mono">
                       {current.name
                         .replace(/^(Dr\.|Mrs\.|Alhaji|Mr\.|Ms\.|Barr\.)\s+/i, '')
@@ -95,7 +95,7 @@ export default function TestimonialsSection() {
                     </span>
                   </div>
                   <div>
-                    <h4 className="font-sans font-extrabold text-sm text-zinc-950 uppercase tracking-wide">
+                    <h4 className="font-sans font-extrabold text-sm text-brand-dark uppercase tracking-wide">
                       {current.name}
                     </h4>
                     <p className="text-[10px] text-zinc-500 font-mono tracking-widest uppercase font-black">
@@ -116,7 +116,7 @@ export default function TestimonialsSection() {
                   key={i}
                   onClick={() => setActiveIndex(i)}
                   className={`h-2 transition-all duration-300 rounded-sm cursor-pointer ${
-                    activeIndex === i ? "w-8 bg-zinc-950" : "w-2 bg-zinc-300 hover:bg-zinc-400"
+                    activeIndex === i ? "w-8 bg-brand-dark" : "w-2 bg-zinc-300 hover:bg-zinc-400"
                   }`}
                   aria-label={`Jump to slide ${i + 1}`}
                 />
@@ -134,7 +134,7 @@ export default function TestimonialsSection() {
               </button>
               <button
                 onClick={handleNext}
-                className="p-3 bg-zinc-950 hover:bg-zinc-800 rounded-sm border border-zinc-900 text-white transition-colors shadow-xs cursor-pointer focus:outline-none"
+                className="p-3 bg-brand-dark hover:bg-blue-800 rounded-sm border border-blue-900 text-white transition-colors shadow-xs cursor-pointer focus:outline-none"
                 aria-label="Next testimony"
               >
                 <ChevronRight className="w-4.5 h-4.5" />

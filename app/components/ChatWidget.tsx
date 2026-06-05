@@ -18,7 +18,7 @@ export default function ChatWidget() {
     {
       role: "assistant",
       content:
-        "Welcome to Gfilled Group. I am here to help you buy property safely in Nigeria.\n\nAre you looking to buy land or a home in Lagos or Abuja? Tell me about the property and I will explain how we can help you check it.",
+        "Hi, welcome to GFilled Group,\n\nAre you looking to buy a property in Nigeria, or do you need someone to verify one you've already found?\n\nTell me where you are in the process and I'll guide you to the best next steps.",
     },
   ]);
   const [inputMessage, setInputMessage] = useState("");
@@ -35,7 +35,7 @@ export default function ChatWidget() {
   const presetQueries = [
     { label: "What is a C of O?", key: "c_of_o", query: "What is a Certificate of Occupancy and why is it important?" },
     { label: "Buying From Abroad", key: "diaspora", query: "What are the biggest risks for diaspora buyers in Nigeria?" },
-    { label: "How You Check", key: "abuja", query: "How does Gfilled check properties in Lagos and Abuja?" },
+    { label: "How You Check", key: "abuja", query: "How does Gfilled check properties in Nigeria?" },
     { label: "Prices", key: "due_diligence", query: "How much does your property checking service cost?" },
   ];
 
@@ -49,11 +49,11 @@ export default function ChatWidget() {
       whatsappLink: "https://wa.me/2348165459779?text=Hello%20GFilled%2C%20I%20am%20a%20diaspora%20buyer%20and%20want%20to%20discuss%20buying%20property%20safely."
     },
     abuja: {
-      text: "We check properties by going directly to the government land offices in Abuja (AGIS) and Lagos (Lands Bureau).\n\nHere is what we do:\n1. Check the official ownership records at the registry.\n2. Confirm the land is not marked for government use.\n3. Visit the property with a surveyor to measure the boundaries.\n\nTo start, chat with us on WhatsApp or fill the booking form.",
-      whatsappLink: "https://wa.me/2348165459779?text=Hello%20GFilled%2C%20I%20need%20a%20property%20check%20in%20Abuja%20or%20Lagos."
+      text: "We check properties by going directly to government land offices across Nigeria.\n\nHere is what we do:\n1. Check the official ownership records at the registry.\n2. Confirm the land is not marked for government acquisition.\n3. Visit the property with a surveyor to measure the boundaries.\n\nTo start, chat with us on WhatsApp or fill the booking form.",
+      whatsappLink: "https://wa.me/2348165459779?text=Hello%20GFilled%2C%20I%20need%20a%20property%20check%20in%20Nigeria."
     },
     due_diligence: {
-      text: "Our complete checking package costs a flat ₦270,000 and includes:\n\n- A surveyor visiting the land with GPS equipment.\n- Full checks at the government land registry.\n- History check for court disputes or problems.\n- A signed safety report from our team.\n\nTo get started, chat with us on WhatsApp or fill the booking form below.",
+      text: "We offer three verification plans to match your needs:\n\n**Essential Verification Plan – ₦100,000**\nGovernment land records check, registry search, basic ownership verification, summary advisory report.\n\n**Standard Due Diligence Plan – ₦250,000**\nEverything in Essential plus developer background check, property documentation review, preliminary risk assessment, legal advisory.\n\n**Full Safety & Transaction Protection Plan – ₦350,000**\nComplete title audit, physical survey, contract review and drafting, title registration and government filing support.\n\nTo get started, chat with us on WhatsApp or fill the booking form below.",
       whatsappLink: "https://wa.me/2348165459779?text=Hello%20GFilled%2C%20I%20want%20to%20book%20the%20full%20property%20checking%20package."
     }
   };
@@ -66,7 +66,7 @@ export default function ChatWidget() {
     if (q.includes("diaspora") || q.includes("scam") || q.includes("remote") || q.includes("fraud")) {
       return "diaspora";
     }
-    if (q.includes("abuja") || q.includes("agis") || q.includes("registry") || q.includes("lagos") || q.includes("lands bureau")) {
+    if (q.includes("abuja") || q.includes("agis") || q.includes("registry") || q.includes("lagos") || q.includes("lands bureau") || q.includes("check")) {
       return "abuja";
     }
     if (q.includes("fee") || q.includes("package") || q.includes("price") || q.includes("cost") || q.includes("due diligence") || q.includes("270")) {
@@ -136,7 +136,7 @@ export default function ChatWidget() {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
             onClick={() => setIsOpen(true)}
-            className="flex items-center gap-3 px-5 py-4 rounded-sm bg-zinc-950 text-white shadow-xl border border-zinc-900 group cursor-pointer focus:outline-none transition-transform active:scale-95 hover:scale-[1.02]"
+            className="flex items-center gap-3 px-5 py-4 rounded-sm bg-brand-dark text-white shadow-xl border border-blue-900 group cursor-pointer focus:outline-none transition-transform active:scale-95 hover:scale-[1.02]"
           >
             <div className="relative">
               <MessageSquare className="w-5.5 h-5.5 text-[#C5A059] group-hover:rotate-6 transition-transform" />
@@ -162,7 +162,7 @@ export default function ChatWidget() {
             className="w-[92vw] sm:w-[420px] h-[580px] bg-white border border-zinc-200 rounded-sm shadow-2xl flex flex-col justify-between overflow-hidden"
           >
             {/* Header - Vibe updated to clean, high contrast with gold details */}
-            <div className="px-5 py-4.5 bg-zinc-950 border-b border-zinc-900 flex items-center justify-between text-white">
+            <div className="px-5 py-4.5 bg-brand-dark border-b border-blue-900 flex items-center justify-between text-white">
               <div className="flex items-center gap-3">
                 <div className="w-8.5 h-8.5 overflow-hidden flex items-center justify-center relative">
                   <Image src="https://pub-c0e4eba1bc8e4753be4abcf9f2033e98.r2.dev/logo.png" fill className="object-contain" alt="GFilled Logo" referrerPolicy="no-referrer" />
@@ -201,7 +201,7 @@ export default function ChatWidget() {
                     <div
                       className={`p-4 rounded-sm text-xs leading-relaxed ${
                         isUser
-                          ? "bg-zinc-950 text-white ml-auto max-w-[85%] text-left border border-zinc-900 shadow-sm"
+                          ? "bg-brand-dark text-white ml-auto max-w-[85%] text-left border border-blue-900 shadow-sm"
                           : "bg-white text-zinc-900 mr-auto max-w-[92%] text-left border border-zinc-200 shadow-sm"
                       }`}
                     >
@@ -221,7 +221,7 @@ export default function ChatWidget() {
                               href={m.whatsappLink || "https://wa.me/2348165459779?text=Hello%20GFilled%2C%20I%20would%20like%20to%20consult%20regarding%20some%20property%20safety%20checks."}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="flex-1 py-2 px-2 bg-zinc-950 hover:bg-[#C5A059] text-white hover:text-zinc-950 rounded-sm text-[10px] font-bold uppercase tracking-wider text-center transition-colors flex items-center justify-center gap-1.5 cursor-pointer shadow-sm border border-zinc-900"
+                              className="flex-1 py-2 px-2 bg-brand-dark hover:bg-[#C5A059] text-white hover:text-brand-dark rounded-sm text-[10px] font-bold uppercase tracking-wider text-center transition-colors flex items-center justify-center gap-1.5 cursor-pointer shadow-sm border border-blue-900"
                             >
                               <Phone className="w-3.5 h-3.5" />
                               Chat on WhatsApp
@@ -232,7 +232,7 @@ export default function ChatWidget() {
                                 document.getElementById("contact")?.scrollIntoView({ behavior: "smooth", block: "start" });
                                 setIsOpen(false);
                               }}
-                              className="flex-1 py-2 px-2 border border-zinc-300 hover:border-zinc-950 text-zinc-800 hover:text-zinc-950 rounded-sm text-[10px] font-bold uppercase tracking-wider text-center transition-colors flex items-center justify-center gap-1.5 cursor-pointer bg-white"
+                              className="flex-1 py-2 px-2 border border-zinc-300 hover:border-brand-dark text-zinc-800 hover:text-brand-dark rounded-sm text-[10px] font-bold uppercase tracking-wider text-center transition-colors flex items-center justify-center gap-1.5 cursor-pointer bg-white"
                             >
                               <FileText className="w-3.5 h-3.5 text-zinc-650" />
                               Fill Booking Form
@@ -266,7 +266,7 @@ export default function ChatWidget() {
                   key={idx}
                   type="button"
                   onClick={() => handleSendMessage(p.query)}
-                  className="inline-block px-3.5 py-2 rounded-sm border border-zinc-200 bg-zinc-50 text-[10px] font-bold uppercase tracking-wider text-zinc-700 hover:bg-zinc-950 hover:text-white hover:border-zinc-950 transition-colors cursor-pointer"
+                  className="inline-block px-3.5 py-2 rounded-sm border border-zinc-200 bg-zinc-50 text-[10px] font-bold uppercase tracking-wider text-zinc-700 hover:bg-brand-dark hover:text-white hover:border-brand-dark transition-colors cursor-pointer"
                 >
                   {p.label}
                 </button>
@@ -302,12 +302,12 @@ export default function ChatWidget() {
                   value={inputMessage}
                   onChange={(e) => setInputMessage(e.target.value)}
                   placeholder="Ask us anything about buying property..."
-                  className="flex-1 p-3.5 rounded-sm bg-zinc-50 border border-zinc-205 text-zinc-950 text-xs font-sans focus:border-zinc-950 focus:bg-white focus:outline-none transition-all"
+                  className="flex-1 p-3.5 rounded-sm bg-zinc-50 border border-zinc-205 text-brand-dark text-xs font-sans focus:border-brand-dark focus:bg-white focus:outline-none transition-all"
                 />
                 <button
                   type="submit"
                   disabled={isLoading || !inputMessage.trim()}
-                  className="p-3.5 bg-zinc-950 disabled:bg-zinc-100 text-white disabled:text-zinc-400 rounded-sm transition-all border border-zinc-950 cursor-pointer flex items-center justify-center shadow-xs"
+                  className="p-3.5 bg-brand-dark disabled:bg-zinc-100 text-white disabled:text-zinc-400 rounded-sm transition-all border border-brand-dark cursor-pointer flex items-center justify-center shadow-xs"
                 >
                   <Send className="w-3.5 h-3.5" />
                 </button>

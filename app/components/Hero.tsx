@@ -147,7 +147,7 @@ export default function Hero({ onVerifyClick, onConsultClick }: HeroProps) {
                 </span>
               </h1>
               <p className="text-zinc-100 text-sm sm:text-base leading-relaxed max-w-xl font-medium drop-shadow-md">
-                Do not lose your savings to a property scam. We check government land records, visit the property to measure the boundaries, and protect your payments every step of the way in Lagos and Abuja.
+                Do not lose your savings to a property scam. We check government land records, visit the property to measure the boundaries, and protect your payments every step of the way across Nigeria.
               </p>
             </motion.div>
 
@@ -163,7 +163,7 @@ export default function Hero({ onVerifyClick, onConsultClick }: HeroProps) {
               <button
                 onClick={onVerifyClick}
                 className={`flex items-center gap-2 px-6 py-3.5 transition-all duration-300 rounded-sm text-xs font-bold uppercase tracking-widest shadow-lg cursor-pointer ${
-                  isHovered ? "bg-[#C5A059] text-zinc-950 animate-pulse" : "bg-white text-zinc-950"
+                  isHovered ? "bg-[#C5A059] text-brand-dark animate-pulse" : "bg-white text-brand-dark"
                 }`}
               >
                 Start Verification
@@ -173,11 +173,11 @@ export default function Hero({ onVerifyClick, onConsultClick }: HeroProps) {
               <button
                 onClick={onVerifyClick}
                 className={`w-11 h-11 rounded-sm flex items-center justify-center transition-all duration-300 transform cursor-pointer shadow-md ${
-                  isHovered ? "bg-[#C5A059] text-zinc-950 scale-105" : "bg-white text-zinc-950"
+                  isHovered ? "bg-[#C5A059] text-brand-dark scale-105" : "bg-white text-brand-dark"
                 }`}
                 aria-label="Diagnose transaction status"
               >
-                <ArrowUpRight className="w-5 h-5 text-zinc-950 font-black" />
+                <ArrowUpRight className="w-5 h-5 text-brand-dark font-black" />
               </button>
             </motion.div>
           </div>
@@ -188,21 +188,21 @@ export default function Hero({ onVerifyClick, onConsultClick }: HeroProps) {
               initial={{ opacity: 0, x: 30, rotate: 1 }}
               animate={{ opacity: 1, x: 0, rotate: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="w-full lg:max-w-[340px] bg-zinc-950 rounded-sm p-4 shadow-2xl relative overflow-hidden text-zinc-950 border border-zinc-800"
+              className="w-full lg:max-w-[340px] bg-brand-dark rounded-sm p-4 shadow-2xl relative overflow-hidden text-brand-dark border border-zinc-800"
             >
               {/* Header inside validation mockup */}
               <div className="flex justify-between items-center mb-3 text-left">
                 <span className="text-[9px] uppercase font-bold tracking-widest text-zinc-400 font-mono">
                   QUICK INTRO
                 </span>
-                <span className="px-2.5 py-1 rounded-sm bg-[#C5A059] text-zinc-950 text-[9px] font-black tracking-wider uppercase">
+                <span className="px-2.5 py-1 rounded-sm bg-[#C5A059] text-brand-dark text-[9px] font-black tracking-wider uppercase">
                   WATCH VIDEO
                 </span>
               </div>
 
               {/* Portrait Video Thumbnail / Custom Player Frame */}
               <div 
-                className="relative h-[400px] sm:h-[480px] w-full rounded-sm overflow-hidden shadow-sm bg-zinc-950 group cursor-pointer border border-zinc-850"
+                className="relative h-[400px] sm:h-[480px] w-full rounded-sm overflow-hidden shadow-sm bg-brand-dark group cursor-pointer border border-zinc-850"
               >
                 {isPlayingVideo ? (
                   <div 
@@ -271,7 +271,7 @@ export default function Hero({ onVerifyClick, onConsultClick }: HeroProps) {
                     />
                     
                     {/* Floating active overlay */}
-                    <div className="absolute top-3 left-3 bg-zinc-950/90 py-1.5 px-3 rounded-sm text-white flex items-center gap-2 z-20">
+                    <div className="absolute top-3 left-3 bg-brand-dark/90 py-1.5 px-3 rounded-sm text-white flex items-center gap-2 z-20">
                       <span className="w-1.5 h-1.5 bg-[#C5A059] rounded-sm animate-pulse"></span>
                       <span className="text-[9px] font-mono font-bold tracking-wider uppercase text-zinc-100">
                         EXPLAINER PLAYBACK READY
@@ -281,11 +281,11 @@ export default function Hero({ onVerifyClick, onConsultClick }: HeroProps) {
                     {/* Central Play Button */}
                     <div className="absolute inset-0 flex items-center justify-center z-13">
                       <div className="w-14 h-14 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/40 group-hover:bg-[#C5A059] transition-all duration-300 shadow-xl scale-95 group-hover:scale-105">
-                        <Play className="w-6 h-6 text-white group-hover:text-zinc-950 fill-current translate-x-0.5" />
+                        <Play className="w-6 h-6 text-white group-hover:text-brand-dark fill-current translate-x-0.5" />
                       </div>
                     </div>
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/25 to-transparent z-10" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-zinc-950/25 to-transparent z-10" />
 
                     {/* Informative Video Overlay */}
                     <div className="absolute bottom-4 left-4 right-4 text-left z-20 bg-black/50 backdrop-blur-md p-3.5 rounded-sm border border-white/10">
@@ -304,7 +304,7 @@ export default function Hero({ onVerifyClick, onConsultClick }: HeroProps) {
               <div className="mt-4 px-1">
                 <button
                   onClick={togglePlay}
-                  className="w-full py-3.5 rounded-sm bg-white hover:bg-[#C5A059] text-zinc-950 text-[10px] font-bold uppercase tracking-widest transition-all cursor-pointer"
+                  className="w-full py-3.5 rounded-sm bg-white hover:bg-[#C5A059] text-brand-dark text-[10px] font-bold uppercase tracking-widest transition-all cursor-pointer"
                 >
                   {isPlaying ? "Pause Explainer Video" : "Play Explainer Video"}
                 </button>

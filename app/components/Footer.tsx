@@ -13,9 +13,9 @@ export default function Footer({ onNavigate }: FooterProps) {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id="gfilled-footer" className="bg-zinc-950 text-white border-t border-zinc-900 py-16">
+    <footer id="gfilled-footer" className="bg-brand-dark text-white border-t border-blue-900 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-zinc-900">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-blue-900">
           {/* Brand Col */}
           <div className="md:col-span-4 space-y-4">
             <div className="flex items-center gap-2.5">
@@ -120,7 +120,7 @@ export default function Footer({ onNavigate }: FooterProps) {
           <p>
             Gfilled Group helps buyers verify properties and lists vetted properties for sale. We provide independent checks on government land records and physical inspections. Our reports are based on the information available at the time of inspection.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-between sm:gap-6 border-t border-zinc-900/50 pt-6 text-[11px] text-zinc-650 font-mono uppercase font-semibold">
+          <div className="flex flex-col sm:flex-row items-center justify-between sm:gap-6 border-t border-blue-900/50 pt-6 text-[11px] text-zinc-650 font-mono uppercase font-semibold">
             <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
               <span className="text-center sm:text-left w-full sm:w-auto">
                 &copy; {currentYear} Gfilled Group. All rights reserved.

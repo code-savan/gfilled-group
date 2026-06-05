@@ -1,6 +1,6 @@
 "use client";
 
-import { Calendar, FileSearch, ShieldCheck, ClipboardList, PenTool, Sparkles } from "lucide-react";
+import { Calendar, FileSearch, ShieldCheck, ClipboardList, PenTool, Sparkles, ThumbsUp, RotateCcw } from "lucide-react";
 import { motion } from "motion/react";
 
 export default function HowItWorks() {
@@ -15,7 +15,7 @@ export default function HowItWorks() {
     {
       num: "02",
       title: "2. Government Records Check",
-      desc: "Our legal team visits the land registries in Lagos and Abuja in person. We check official records to confirm the seller truly owns the land and nobody is fighting over it in court.",
+      desc: "Our legal team visits the land registries in person. We check official records to confirm the seller truly owns the land and nobody is fighting over it in court.",
       icon: FileSearch,
       inclusion: "Official Records Check",
     },
@@ -35,10 +35,10 @@ export default function HowItWorks() {
     },
     {
       num: "05",
-      title: "5. Safe Contracts and Protected Payments",
-      desc: "Our lawyers write safe purchase agreements. We can also hold your payments securely and only release the money when all checks are 100% complete.",
-      icon: PenTool,
-      inclusion: "Protected Payments",
+      title: "5. Property Is Verified and Safe",
+      desc: "If our checks confirm the property is clean, we help you proceed with confidence. We draft safe contracts, hold your payments securely, and register your ownership with the government.",
+      icon: ThumbsUp,
+      inclusion: "Safe Purchase Process",
     },
     {
       num: "06",
@@ -46,6 +46,13 @@ export default function HowItWorks() {
       desc: "We handle all the government paperwork to register your name as the official owner of the property.",
       icon: Sparkles,
       inclusion: "Government Registration",
+    },
+    {
+      num: "07",
+      title: "7. If Issues Are Found",
+      desc: "If our checks reveal problems with the property, we advise you to walk away. We then help you source a verified, clean property and run the same thorough checks to make sure your next choice is 100% safe.",
+      icon: RotateCcw,
+      inclusion: "Alternative Sourcing",
     },
   ];
 
@@ -58,7 +65,7 @@ export default function HowItWorks() {
           <span className="text-[10px] font-mono font-black tracking-widest text-zinc-400 uppercase block">
             HOW IT WORKS
           </span>
-          <h2 className="font-sans text-2xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 uppercase leading-tight">
+          <h2 className="font-sans text-2xl sm:text-5xl font-extrabold tracking-tight text-brand-dark uppercase leading-tight">
             Simple Steps to <br />
             <span className="text-zinc-650 font-serif italic font-light tracking-wide normal-case text-xl sm:text-4xl block mt-1">
                   Buy Property Safely.
@@ -83,13 +90,13 @@ export default function HowItWorks() {
                     <span className="font-sans font-black text-4xl text-zinc-300 tracking-tight leading-none">
                       {s.num}
                     </span>
-                    <div className="p-3 rounded-sm bg-white border border-zinc-200 text-zinc-950">
-                      <Icon className="w-5 h-5 text-zinc-950" />
+                    <div className="p-3 rounded-sm bg-white border border-zinc-200 text-brand-dark">
+                      <Icon className="w-5 h-5 text-brand-dark" />
                     </div>
                   </div>
 
                   <div className="space-y-2">
-                    <h3 className="font-sans font-black text-xs text-zinc-950 uppercase tracking-widest leading-snug">{s.title}</h3>
+                    <h3 className="font-sans font-black text-xs text-brand-dark uppercase tracking-widest leading-snug">{s.title}</h3>
                     <p className="text-zinc-650 text-xs leading-relaxed font-sans mt-2">{s.desc}</p>
                   </div>
                 </div>

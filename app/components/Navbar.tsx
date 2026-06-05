@@ -82,7 +82,7 @@ export default function Navbar({ onNavigate, activeSection }: NavbarProps) {
               <div>
                 <div className="flex items-center gap-1.5">
                   <span className={`font-sans font-extrabold tracking-tight text-lg transition-colors duration-200 ${
-                    isScrolled ? "text-zinc-950 group-hover:text-zinc-600" : "text-white group-hover:text-zinc-300"
+                    isScrolled ? "text-brand-dark group-hover:text-zinc-600" : "text-white group-hover:text-zinc-300"
                   }`}>
                     GFilled Group
                   </span>
@@ -104,8 +104,8 @@ export default function Navbar({ onNavigate, activeSection }: NavbarProps) {
                   onClick={() => onNavigate(item.id)}
                   className={`text-xs font-bold uppercase tracking-widest transition-all duration-200 cursor-pointer relative py-1 ${
                     activeSection === item.id
-                      ? isScrolled ? "text-zinc-950" : "text-white"
-                      : isScrolled ? "text-zinc-500 hover:text-zinc-950" : "text-zinc-200 hover:text-white"
+                      ? isScrolled ? "text-brand-dark" : "text-white"
+                      : isScrolled ? "text-zinc-500 hover:text-brand-dark" : "text-zinc-200 hover:text-white"
                   }`}
                 >
                   {item.label}
@@ -127,7 +127,7 @@ export default function Navbar({ onNavigate, activeSection }: NavbarProps) {
               <a
                 href="mailto:legal@gfilled.com"
                 className={`hidden lg:flex items-center gap-2 text-[10px] font-mono font-bold tracking-wider transition-colors ${
-                  isScrolled ? "text-zinc-500 hover:text-zinc-950" : "text-zinc-200 hover:text-white"
+                  isScrolled ? "text-zinc-500 hover:text-brand-dark" : "text-zinc-200 hover:text-white"
                 }`}
               >
                 <Mail className="w-3.5 h-3.5 text-[#C5A059]" />
@@ -138,8 +138,8 @@ export default function Navbar({ onNavigate, activeSection }: NavbarProps) {
                 onClick={() => onNavigate("contact")}
                 className={`hidden sm:inline-flex items-center px-5 py-2.5 text-[10px] font-black uppercase tracking-widest rounded-sm transition-all duration-205 cursor-pointer border ${
                   isScrolled
-                    ? "bg-zinc-950 text-white hover:bg-zinc-800 border-zinc-900"
-                    : "bg-white text-zinc-950 hover:bg-[#C5A059] hover:text-zinc-950 border-white/20"
+                    ? "bg-brand-dark text-white hover:bg-blue-800 border-blue-900"
+                    : "bg-white text-brand-dark hover:bg-[#C5A059] hover:text-brand-dark border-white/20"
                 }`}
               >
                 Free Consultation
@@ -151,8 +151,8 @@ export default function Navbar({ onNavigate, activeSection }: NavbarProps) {
                 onClick={() => setIsSheetOpen(true)}
                 className={`p-3 rounded-sm border transition-all duration-300 transform hover:scale-105 active:scale-95 cursor-pointer shadow-sm ${
                   isScrolled
-                    ? "bg-zinc-950 text-white border-zinc-905 hover:bg-zinc-800"
-                    : "bg-white/10 text-white border-white/20 hover:bg-white hover:text-zinc-950"
+                    ? "bg-brand-dark text-white border-zinc-905 hover:bg-blue-800"
+                    : "bg-white/10 text-white border-white/20 hover:bg-white hover:text-brand-dark"
                 }`}
                 aria-label="Toggle Complete Menu"
               >
@@ -173,7 +173,7 @@ export default function Navbar({ onNavigate, activeSection }: NavbarProps) {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setIsSheetOpen(false)}
-              className="fixed inset-0 bg-zinc-950/40 backdrop-blur-md z-50 cursor-pointer"
+              className="fixed inset-0 bg-brand-dark/40 backdrop-blur-md z-50 cursor-pointer"
             />
 
             {/* Aesthetic sheet content */}
@@ -192,7 +192,7 @@ export default function Navbar({ onNavigate, activeSection }: NavbarProps) {
                       <Image src="https://pub-c0e4eba1bc8e4753be4abcf9f2033e98.r2.dev/logo.png" fill className="object-contain" alt="GFilled Logo" referrerPolicy="no-referrer" />
                     </div>
                     <div>
-                      <span className="font-sans font-bold tracking-tight text-base text-zinc-950 block">
+                      <span className="font-sans font-bold tracking-tight text-base text-brand-dark block">
                         GFilled Group
                       </span>
                       <div className="h-[1px] w-full bg-[#C5A059] my-0.5" />
@@ -204,7 +204,7 @@ export default function Navbar({ onNavigate, activeSection }: NavbarProps) {
 
                   <button
                     onClick={() => setIsSheetOpen(false)}
-                    className="p-2.5 rounded-sm border border-zinc-200 text-zinc-500 hover:text-zinc-950 hover:bg-stone-50 transition-colors focus:outline-none cursor-pointer"
+                    className="p-2.5 rounded-sm border border-zinc-200 text-zinc-500 hover:text-brand-dark hover:bg-stone-50 transition-colors focus:outline-none cursor-pointer"
                   >
                     <X className="w-4.5 h-4.5" />
                   </button>
@@ -232,7 +232,7 @@ export default function Navbar({ onNavigate, activeSection }: NavbarProps) {
                         {String(idx + 1).padStart(2, "0")}
                       </div>
                       <div className="flex-1 space-y-0.5">
-                        <div className="text-xs uppercase tracking-wider font-bold text-zinc-800 group-hover:text-zinc-950 transition-colors flex items-center justify-between">
+                        <div className="text-xs uppercase tracking-wider font-bold text-zinc-800 group-hover:text-brand-dark transition-colors flex items-center justify-between">
                           {item.label}
                           <ArrowRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-[#C5A059] transition-all transform group-hover:translate-x-1" />
                         </div>

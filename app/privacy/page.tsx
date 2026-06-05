@@ -9,7 +9,7 @@ export default function PrivacyPage() {
       {/* Sticky Nav */}
       <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-zinc-200">
         <div className="max-w-4xl mx-auto px-6 py-3.5 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 text-zinc-500 hover:text-zinc-950 transition-colors group">
+          <Link href="/" className="flex items-center gap-2 text-zinc-500 hover:text-brand-dark transition-colors group">
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
             <span className="text-xs font-bold uppercase tracking-widest">Back</span>
           </Link>
@@ -23,7 +23,7 @@ export default function PrivacyPage() {
           <span className="text-[10px] font-mono tracking-widest font-black uppercase text-[#C5A059] block">
             PRIVACY GUARANTEE
           </span>
-          <h1 className="font-sans text-3xl sm:text-5xl font-extrabold uppercase tracking-tight leading-tight text-zinc-950">
+          <h1 className="font-sans text-3xl sm:text-5xl font-extrabold uppercase tracking-tight leading-tight text-brand-dark">
             How We Protect Your Information
           </h1>
           <p className="font-serif italic text-zinc-500 text-base sm:text-lg max-w-xl mx-auto">
@@ -39,7 +39,7 @@ export default function PrivacyPage() {
           <div className="flex gap-4 items-start bg-zinc-50 p-5 sm:p-6 rounded-sm border border-zinc-200">
             <ShieldCheck className="w-8 h-8 text-[#C5A059] shrink-0 mt-1" />
             <div className="space-y-1">
-              <h2 className="font-sans font-bold text-sm text-zinc-950 uppercase tracking-wider">Our Simple Promise</h2>
+              <h2 className="font-sans font-bold text-sm text-brand-dark uppercase tracking-wider">Our Simple Promise</h2>
               <p className="text-xs sm:text-sm text-zinc-600 leading-relaxed">
                 When you want to buy property in Nigeria, you have to share private papers, like survey plans, draft contracts, and ID documents. We promise to guard these documents like our own home. We do not sell your details, and we only use them to confirm your land is safe.
               </p>
@@ -55,7 +55,7 @@ export default function PrivacyPage() {
                 <h3 className="font-sans font-extrabold text-sm text-zinc-900 uppercase tracking-wide">1. What Paperwork We Ask For & Why</h3>
               </div>
               <p className="text-xs sm:text-sm text-zinc-600 leading-relaxed pl-10">
-                To keep you safe from property scams, we need to inspect the land. We ask you for the <b>survey plan</b>, the <b>title deeds (such as a Certificate of Occupancy or Deed of Assignment)</b>, and details about the seller. This allows our team in Lagos and Abuja to visit the land registry and verify who the true owner is. We only ask for what is absolutely necessary to do this job.
+                To keep you safe from property scams, we need to inspect the land. We ask you for the <b>survey plan</b>, the <b>title deeds (such as a Certificate of Occupancy or Deed of Assignment)</b>, and details about the seller. This allows our team to visit the relevant land registry across Nigeria and verify who the true owner is. We only ask for what is absolutely necessary to do this job.
               </p>
             </div>
 
@@ -99,7 +99,7 @@ export default function PrivacyPage() {
           <div className="pt-8 border-t border-zinc-200 text-center">
             <Link
               href="/"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-zinc-950 hover:bg-[#C5A059] text-white hover:text-zinc-950 rounded-sm text-xs font-bold uppercase tracking-widest transition-all"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-brand-dark hover:bg-[#C5A059] text-white hover:text-brand-dark rounded-sm text-xs font-bold uppercase tracking-widest transition-all"
             >
               Return Home
             </Link>
