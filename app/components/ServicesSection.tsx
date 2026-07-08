@@ -11,7 +11,6 @@ export default function ServicesSection({ onBookConsultation }: ServicesSectionP
   const plans = [
     {
       name: "Essential Verification Plan",
-      price: "\u20A6100,000",
       description: "A foundational check for early-stage property assessment and risk identification.",
       features: [
         "Government Land Records Check",
@@ -25,7 +24,6 @@ export default function ServicesSection({ onBookConsultation }: ServicesSectionP
     },
     {
       name: "Standard Due Diligence Plan",
-      price: "\u20A6250,000",
       description: "A comprehensive verification package for serious property buyers and investors.",
       features: [
         "Everything in the Essential Plan",
@@ -40,7 +38,6 @@ export default function ServicesSection({ onBookConsultation }: ServicesSectionP
     },
     {
       name: "Full Safety & Transaction Protection Plan",
-      price: "\u20A6350,000",
       description: "A complete end-to-end legal and physical verification service for secure property acquisition.",
       features: [
         "Full Title Audit & Legal Review",
@@ -57,14 +54,6 @@ export default function ServicesSection({ onBookConsultation }: ServicesSectionP
     },
   ];
 
-  const individualServices = [
-    { name: "Government Land Records Check", price: "\u20A690,000" },
-    { name: "Physical Land Survey Verification", price: "\u20A690,000" },
-    { name: "Developer Background Check", price: "\u20A650,000" },
-    { name: "Contract Review & Drafting", price: "\u20A6150,000" },
-    { name: "Title Registration & Government Filing", price: "\u20A6250,000" },
-  ];
-
   return (
     <section id="services" className="py-16 sm:py-32 bg-white text-zinc-900 relative border-t border-zinc-200">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
@@ -72,7 +61,7 @@ export default function ServicesSection({ onBookConsultation }: ServicesSectionP
         {/* Title Block */}
         <div className="text-center space-y-4 max-w-4xl mx-auto mb-12 sm:mb-16">
           <span className="text-[10px] font-mono tracking-widest font-black uppercase text-zinc-400 block">
-            OUR SERVICES & PRICING
+            OUR SERVICES
           </span>
           <h2 className="font-sans text-2xl sm:text-5xl font-extrabold tracking-tight text-brand-dark uppercase leading-tight">
             Gfilled Group – <br />
@@ -115,10 +104,6 @@ export default function ServicesSection({ onBookConsultation }: ServicesSectionP
                   </div>
                 </div>
 
-                <div className="flex items-baseline mb-6 gap-1.5 border-b border-zinc-100 pb-5">
-                  <span className="text-2xl sm:text-4xl font-sans font-black text-brand-dark">{plan.price}</span>
-                </div>
-
                 <p className="text-xs text-zinc-650 leading-relaxed mb-6 font-sans">{plan.description}</p>
                 
                 <div className="space-y-4 mb-6">
@@ -150,39 +135,10 @@ export default function ServicesSection({ onBookConsultation }: ServicesSectionP
                     : "border border-zinc-300 text-zinc-800 hover:border-brand-dark hover:text-brand-dark"
                 }`}
               >
-                Choose This Plan
+                Get Started
               </button>
             </div>
           ))}
-        </div>
-
-        {/* Individual Services */}
-        <div className="rounded-sm border border-zinc-200 bg-zinc-50 p-6 sm:p-10 mb-12 sm:mb-16">
-          <div className="text-center mb-8">
-            <span className="text-[9px] font-bold font-mono tracking-widest text-zinc-500 uppercase">
-              INDIVIDUAL SERVICES
-            </span>
-            <h3 className="font-sans text-xl sm:text-3xl font-extrabold mt-2 text-brand-dark uppercase tracking-tight">
-              Pick the Specific Service You Need
-            </h3>
-            <p className="text-xs text-zinc-600 mt-2 font-sans">
-              For clients who require specific services only.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {individualServices.map((service, idx) => (
-              <div key={idx} className="bg-white border border-zinc-200 rounded-sm p-4 flex items-center justify-between hover:border-brand-dark transition-colors">
-                <span className="text-xs font-sans text-zinc-800 font-semibold">{service.name}</span>
-                <span className="text-sm font-sans font-black text-brand-dark">{service.price}</span>
-              </div>
-            ))}
-          </div>
-          <div className="mt-6 p-4 bg-amber-50 border border-amber-200 rounded-sm text-left">
-            <p className="text-[11px] text-amber-800 leading-relaxed font-sans">
-              <span className="font-bold uppercase">Important Notice: </span>
-              Pricing may vary based on property location, complexity, and urgency. Government fees, third-party charges, or surveyor fees may apply where necessary. Final service cost will be confirmed after initial property assessment.
-            </p>
-          </div>
         </div>
 
         {/* Why Choose Gfilled */}
